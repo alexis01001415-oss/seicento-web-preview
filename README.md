@@ -1,5 +1,7 @@
 # Seicento · Vista previa de rediseño
 
+[Ver demo](https://alexis01001415-oss.github.io/seicento-web-preview/) · [Abrir repositorio](https://github.com/alexis01001415-oss/seicento-web-preview)
+
 Homepage de trabajo para revisar el rediseño de Seicento Makeup School. Es una página estática: el contenido, los estilos y el pequeño comportamiento del menú móvil están en [`index.html`](index.html). Las imágenes están en [`assets/`](assets/) y el copy y sistema visual en [`docs/copy-design-system.md`](docs/copy-design-system.md).
 
 ## Abrir y editar
