@@ -1,0 +1,68 @@
+{
+  "project": "Seicento Silky",
+  "description": "Material 3D disponible para una sección editorial del producto.",
+  "video": {
+    "file": "silky-film.mp4",
+    "durationSeconds": 10,
+    "frames": 300,
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "audio": false
+  },
+  "frames": [
+    {
+      "file": "silky-01-closed.webp",
+      "timeSeconds": 0.8,
+      "alt": "Paleta Silky cerrada sobre un fondo oscuro."
+    },
+    {
+      "file": "silky-02-opening.webp",
+      "timeSeconds": 1.667,
+      "alt": "La paleta Silky comienza a abrirse."
+    },
+    {
+      "file": "silky-03-open.webp",
+      "timeSeconds": 2.667,
+      "alt": "Paleta Silky abierta con sus tonos de color."
+    },
+    {
+      "file": "silky-04-detail.webp",
+      "timeSeconds": 3.667,
+      "alt": "Detalle de la paleta Silky y sus tonos."
+    },
+    {
+      "file": "silky-05-pigment.webp",
+      "timeSeconds": 4.667,
+      "alt": "Acercamiento a pigmentos de la paleta Silky."
+    },
+    {
+      "file": "silky-06-texture.webp",
+      "timeSeconds": 5.667,
+      "alt": "Pinceles junto a la paleta Silky."
+    },
+    {
+      "file": "silky-07-brushes.webp",
+      "timeSeconds": 6.667,
+      "alt": "Pinceles frente al espejo y los tonos de Silky."
+    },
+    {
+      "file": "silky-08-finale.webp",
+      "timeSeconds": 9.5,
+      "alt": "Paleta Silky abierta al cierre de la animación."
+    }
+  ],
+  "editorialNote": "El render muestra marcas en el objeto 3D. El material por sí solo no acredita lanzamiento, venta ni colaboración comercial.",
+  "photos": [
+    {
+      "file": "silky-photo-kit.webp",
+      "source": "R3_03413.jpg",
+      "alt": "Fotografía de la paleta Silky cerrada y abierta junto a dos pinceles."
+    },
+    {
+      "file": "silky-photo-open.webp",
+      "source": "R3_03427.jpg",
+      "alt": "Fotografía de cerca de los tonos de la paleta Silky abierta."
+    }
+  ]
+}
