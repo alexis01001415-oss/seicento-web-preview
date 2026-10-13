@@ -4,7 +4,7 @@
 
 Prototipo de Seicento Makeup School para personas que quieren estudiar maquillaje. La dirección visual toma como referencia la presentación de producto de [AirPods Pro de Apple](https://www.apple.com/mx/airpods-pro/): titulares breves, beneficios concretos, imágenes protagonistas y lectura por bloques.
 
-La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 17 secciones**, con un H1 y 16 H2. La colaboración **Seicento × Beauty Creations** se presenta con una secuencia controlada por el desplazamiento y cuatro bloques de características de Silky Pro Palette.
+La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 17 secciones**, con un H1 y 16 H2. La colaboración **Seicento × Beauty Creations** se presenta con una secuencia controlada por el desplazamiento y cinco bloques de características de Silky Pro Palette.
 
 ## Archivos de trabajo
 
@@ -20,9 +20,9 @@ No hay proceso de compilación ni dependencias de aplicación. Para revisar el s
 
 ## Silky Pro Palette
 
-El producto comunica características observables en las fotografías aportadas: **35 tonos, acabados mate y brillantes, gama de neutros, pasteles y colores vivos, y espejo integrado**. Cada característica se relaciona con una posibilidad de uso: combinar tonos, construir profundidad, añadir puntos de luz y revisar la aplicación.
+El producto comunica características observables en las fotografías aportadas: **35 tonos, acabados mate y brillantes, gama de neutros, pasteles y colores vivos, y espejo integrado**. Además, el responsable del proyecto confirmó que **incluye dos brochas**. Cada característica se relaciona con una posibilidad de uso: combinar tonos, construir profundidad, añadir puntos de luz, revisar la aplicación y poner las ideas en práctica.
 
-El bento combina una tarjeta grande de la paleta, una tarjeta de acabados, otra del espejo y una franja de combinaciones de color. El CTA abre el WhatsApp público de la escuela. Las brochas visibles en la secuencia no se describen como accesorios incluidos; tampoco se atribuyen propiedades de fórmula o duración sin una ficha que las respalde.
+El bento combina una tarjeta grande de la paleta, una tarjeta de acabados, otra del espejo, una de las dos brochas incluidas y otra de combinaciones de color. El cierre de la secuencia presenta **Paleta + 2 brochas incluidas / Del color a la aplicación**. El CTA abre el WhatsApp público de la escuela. No se atribuyen propiedades de fórmula o duración sin una ficha que las respalde.
 
 La portada usa [`assets/silky/scroll-v7/`](assets/silky/scroll-v7/):
 

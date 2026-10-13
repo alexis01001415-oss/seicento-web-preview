@@ -21,3 +21,7 @@
 .scroll-story.is-reduced{height:auto}.scroll-story.is-reduced .scroll-stage{position:relative;top:auto}.scroll-story.is-reduced .scroll-intro,.scroll-story.is-reduced .scroll-caption,.scroll-story.is-reduced .scroll-hint,.scroll-story.is-reduced .scroll-track{display:none}
 
 .product-spectrum .bento-label{color:#b5a1af}
+
+.product-bottom-grid{display:grid;grid-template-columns:5fr 7fr;gap:20px;margin-top:20px}.product-bottom-grid .product-spectrum{display:flex;flex-direction:column;align-items:stretch;justify-content:space-between;margin:0;padding:34px;gap:30px}.product-bottom-grid .color-family{gap:10px}.bento-brushes{background:#dce0e8;min-height:390px}.bento-brushes h4{max-width:235px;font-size:42px}.bento-brushes p{max-width:190px;font-size:14px;color:#586274}.bento-brushes img{position:absolute;width:90%;max-width:none;left:22%;bottom:-35px;z-index:-1}.bento-brushes .bento-label{color:#586274}
+@media(max-width:760px){.product-bottom-grid{grid-template-columns:1fr;gap:16px}.product-bottom-grid .product-spectrum{padding:30px}.bento-brushes{min-height:390px}.bento-brushes p{max-width:190px}}
+@media(max-width:480px){.bento-brushes{min-height:460px}.bento-brushes h4{font-size:36px;max-width:280px}.bento-brushes p{max-width:280px}.bento-brushes img{width:130%;left:-15%;bottom:-12px}.product-bottom-grid .product-spectrum{padding:28px}}

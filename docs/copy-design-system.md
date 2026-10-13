@@ -20,7 +20,7 @@ Revisión del 13 de octubre de 2026. Especificación del prototipo local para su
 | --- | --- | --- | --- |
 | 1 | Portada | H1: Tienes la pasión. Aprende la técnica. | Pasión, técnica y práctica. Encontrar carrera o probar una clase gratis. |
 | 2 | Carreras | H2: Encuentra tu especialidad. | Siete opciones con duración y enlace individual. |
-| 3 | Seicento × Beauty Creations | H2: Silky Pro Palette. | Silky: 120 imágenes ligadas al scroll y cuatro bloques de características. |
+| 3 | Seicento × Beauty Creations | H2: Silky Pro Palette. | Silky: 120 imágenes ligadas al scroll y cinco bloques de características. |
 | 4 | Educación continua | H2: Sigue sumando técnica. | Especialidades de 48 h, intensivos de 60 h y talleres. |
 | 5 | Método Seicento 3D3 | H2: Aprende haciendo. | 70 % práctica, 20 % técnica y 10 % fundamentos en carreras profesionales. |
 | 6 | Experiencia Seicento | H2: Herramientas para ir más lejos. | Black Learn, prácticas, portafolio, estudio fotográfico, Makeup Store y masterclasses. |
@@ -36,7 +36,7 @@ Revisión del 13 de octubre de 2026. Especificación del prototipo local para su
 | 16 | Preguntas frecuentes | H2: Lo que quieres saber. | 16 respuestas sobre programas, experiencia e inscripción. |
 | 17 | Contacto | H2: Haz espacio para tu talento. | Asesoría para elegir carrera y próximo grupo. |
 
-Hay **un H1 y 16 H2 en 17 secciones**. Los programas, módulos y temas de FAQ usan H3. La introducción del bento es H3 y sus cuatro beneficios son H4. En Framer configura la etiqueta HTML por separado del tamaño visual. **Método Seicento 3D3** es el nombre de la metodología académica de la escuela.
+Hay **un H1 y 16 H2 en 17 secciones**. Los programas, módulos y temas de FAQ usan H3. La introducción del bento es H3 y sus cinco beneficios son H4. En Framer configura la etiqueta HTML por separado del tamaño visual. **Método Seicento 3D3** es el nombre de la metodología académica de la escuela.
 
 ## Copy principal
 
@@ -56,7 +56,7 @@ Franja de confianza: **+20,000 egresados** · **Reforma y Coyoacán: dos campus 
 **Silky Pro Palette.**
 
 La colaboración de Seicento y Beauty Creations.
-35 tonos para pasar de una idea a tu próximo look.
+35 tonos, espejo integrado y dos brochas incluidas.
 
 Enlace inicial: **Conoce lo que puedes crear**.
 
@@ -66,7 +66,7 @@ Las vistas acompañan tres mensajes:
 
 - **Espejo integrado:** Cada detalle, a la vista.
 - **Neutros. Pasteles. Colores vivos.:** El próximo look es tuyo.
-- **Seicento × Beauty Creations:** Una colaboración. Muchas posibilidades.
+- **Paleta + 2 brochas incluidas:** Del color a la aplicación.
 
 Acceso directo: **Ver características**.
 
@@ -81,10 +81,11 @@ Color, acabados y detalles que acompañan tu práctica.
 | Acabados | Acabados mate y brillantes | Profundidad. Y ese punto de luz. | Construye profundidad con los mates. Añade acentos con los tonos brillantes. |
 | Espejo | Espejo integrado | Cada detalle, a la vista. | Sigue la aplicación y revisa el resultado desde la propia paleta. |
 | Combinaciones | Una gama. Muchas combinaciones. | De lo sutil a lo inesperado. | Una transición suave. Un contraste de color. Practica con tonos neutros o explora combinaciones más atrevidas. |
+| Brochas | Incluidas con tu paleta | 2 brochas. Más por crear. | Del color a la aplicación. Tu paleta viene acompañada de dos brochas para poner tus ideas en práctica. |
 
 Acciones: **Quiero conocer Silky** / **Aprende a crear tus looks**.
 
-Las fotografías aportadas permiten observar las cinco filas de siete tonos, los acabados y el espejo. Los beneficios describen usos creativos de esas características. No se afirman promesas de pigmentación, duración, composición, resistencia al agua o atributos de fórmula; las brochas que aparecen en el material visual no se presentan como incluidas en la compra.
+Las fotografías aportadas permiten observar las cinco filas de siete tonos, los acabados y el espejo. El responsable del proyecto confirmó que las dos brochas están incluidas al adquirir Silky; esa condición comercial procede de su confirmación. Los beneficios describen usos creativos de las características y los accesorios. No se afirman promesas de pigmentación, duración, composición, resistencia al agua o atributos de fórmula.
 
 ### Siete opciones de carrera
 
@@ -144,7 +145,7 @@ Pro Beauty es una plataforma para mostrar tu portafolio y tus servicios a person
 
 ### ¿Cuál es la colaboración con Beauty Creations?
 
-Silky Pro Palette es la colaboración de Seicento y Beauty Creations: una paleta de 35 tonos, con acabados mate y brillantes, colores neutros y vivos, y espejo integrado. Descubre sus detalles en la [sección de la colaboración](../index.html#silky).
+Silky Pro Palette es la colaboración de Seicento y Beauty Creations: una paleta de 35 tonos, con acabados mate y brillantes, colores neutros y vivos, espejo integrado y dos brochas incluidas. Descubre sus detalles en la [sección de la colaboración](../index.html#silky).
 
 ### ¿Cuánto cuesta estudiar y qué opciones de pago hay?
 
@@ -200,9 +201,9 @@ El escenario de producto usa un degradado radial de blanco a #F4F4F6 y #ECECF0. 
 
 ### Bento y adaptación
 
-En escritorio, el área superior usa 12 columnas: la paleta ocupa siete columnas y dos filas; acabados y espejo ocupan cinco columnas y una fila cada uno. La franja de combinaciones completa el conjunto debajo, con copy y muestras gráficas de color. Son cuatro bloques con tamaños y tratamientos distintos.
+En escritorio, el área superior usa 12 columnas: la paleta ocupa siete columnas y dos filas; acabados y espejo ocupan cinco columnas y una fila cada uno. La fila inferior combina una tarjeta de combinaciones de color y otra de las dos brochas incluidas, en proporción de cinco a siete columnas. Son cinco bloques con tamaños y tratamientos distintos.
 
-En tableta, la paleta pasa al ancho completo y las dos tarjetas de detalle comparten la fila siguiente. Por debajo de 480 px, cada bloque ocupa una fila. Las muestras de color son decorativas y no representan una carta de color calibrada.
+En tableta, la paleta pasa al ancho completo y las tarjetas de acabados y espejo comparten la fila siguiente. Por debajo de 760 px, las tarjetas de combinaciones y brochas se apilan. Por debajo de 480 px, cada bloque ocupa una fila. Las muestras de color son decorativas y no representan una carta de color calibrada.
 
 Los programas se presentan en tres tarjetas y cuatro filas compactas. Los seis beneficios académicos se distribuyen en tres, dos o una columna según el ancho. La FAQ usa elementos `details` nativos y una introducción fija sólo en escritorio.
 
@@ -224,7 +225,7 @@ La implementación de portada está dividida entre [index.html](../index.html), 
 | Escenario fijo | Alto de ventana menos 64 px de navegación |
 | Solicitudes y caché | Cuatro solicitudes simultáneas; 20 imágenes en escritorio y 12 en móvil |
 
-El cargador empieza al acercarse a la sección y prioriza la imagen que corresponde al scroll, con anticipación de las cercanas. Mantiene una imagen disponible mientras llega la solicitada. El texto inicial se desvanece durante la apertura; las siguientes leyendas acompañan el espejo, los tonos y la colaboración.
+El cargador empieza al acercarse a la sección y prioriza la imagen que corresponde al scroll, con anticipación de las cercanas. Mantiene una imagen disponible mientras llega la solicitada. El texto inicial se desvanece durante la apertura; las siguientes leyendas acompañan el espejo, los tonos y las dos brochas incluidas.
 
 Con `prefers-reduced-motion`, el recorrido largo se reduce a una vista estática del fotograma 64 y desaparecen las transiciones. La imagen de respaldo también aparece antes de que el canvas esté listo, cuando no hay JavaScript o si el canvas no puede dibujar. Los beneficios se conservan como texto HTML en el bento. Un enlace permite saltar directamente a las características.
 
@@ -248,6 +249,10 @@ La demo conserva `noindex, nofollow` e identificación de vista previa. Esta esp
 - [Brunch + Masterclass](https://seicento.edu.mx/brunchmasterclass/): experiencia en Reforma. [Calendario](https://seicento.edu.mx/calendario/): próximos grupos.
 - [SEP](https://seicento.edu.mx/sep/) e [IUM](https://seicento.edu.mx/ium/): reconocimiento y condiciones académicas. IUM contempla Integral de 12 meses y Pro Master de 14 meses.
 - [Noticias](https://seicento.edu.mx/noticias/): artículos enlazados y portadas publicadas por la escuela.
-- Material de producto aportado para el proyecto: fotografías `R3_03413.jpg` y `R3_03427.jpg`, además de la secuencia v007. La colaboración Seicento × Beauty Creations fue confirmada por el responsable del proyecto. La cantidad de tonos, acabados visibles y espejo se describen a partir de esas imágenes.
+- Material de producto aportado para el proyecto: fotografías `R3_03413.jpg` y `R3_03427.jpg`, además de la secuencia v007. La colaboración Seicento × Beauty Creations fue confirmada por el responsable del proyecto. La cantidad de tonos, acabados visibles y espejo se describen a partir de esas imágenes. La inclusión de dos brochas procede de la confirmación del responsable del proyecto.
 
 Los recursos de marca pertenecen a sus titulares. Las condiciones comerciales y los próximos grupos se consultan en los enlaces oficiales.
+
+## Contenido incluido · Confirmación del responsable
+
+El 13 de octubre de 2026, el responsable del proyecto confirmó que **se incluyen las dos brochas al adquirir Silky**. Se añadió una tarjeta de bento: **2 brochas. Más por crear.** / Del color a la aplicación. Tu paleta viene acompañada de dos brochas para poner tus ideas en práctica. El dato también aparece en la introducción, el cierre de la secuencia y la respuesta sobre la colaboración.
