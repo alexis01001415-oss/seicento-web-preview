@@ -37,6 +37,8 @@ El título del producto aparece en el modelo y en los archivos del proyecto Blen
 
 Los recursos están en [`assets/silky/`](../assets/silky/) y el [manifiesto](../assets/silky/manifest.json) registra nombres, tiempos y textos alternativos. Para cambiar la selección, reemplaza los archivos y actualiza los `data-src`, `data-alt` y miniaturas del bloque `#silky` en [`index.html`](../index.html). Para añadir más fotogramas, agrega más botones dentro de `.sequence-thumbs`; el contador se adapta automáticamente.
 
+Para el efecto de desplazamiento en Framer, usa el [Code Component Image Sequence Scrub](../framer/README.md). Tiene una secuencia adicional de 150 fotogramas optimizados, independiente de esta galería manual.
+
 **Límite editorial:** el render muestra marcas sobre la paleta, pero este material no acredita lanzamiento, venta, precio ni condiciones de una colaboración comercial. La sección se presenta como exploración visual.
 
 ## Design system para Framer

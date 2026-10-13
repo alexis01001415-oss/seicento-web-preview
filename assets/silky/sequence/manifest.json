@@ -1,0 +1,12 @@
+{
+  "name": "Silky Pro Palette — scroll sequence",
+  "source": "../silky-film.mp4",
+  "format": "webp",
+  "width": 900,
+  "height": 1600,
+  "sampleRateFps": 15,
+  "firstFrame": 1,
+  "frameCount": 150,
+  "filenamePattern": "frame-%04d.webp",
+  "alt": "Animación de la paleta Silky Pro Palette creada en Blender"
+}

@@ -4,6 +4,8 @@
 
 Homepage de trabajo para revisar el rediseño de Seicento Makeup School. Es una página estática: el contenido, los estilos, el menú móvil y la secuencia de imágenes están en [`index.html`](index.html). Las imágenes y el video están en [`assets/`](assets/) y el copy y sistema visual en [`docs/copy-design-system.md`](docs/copy-design-system.md).
 
+El [componente Image Sequence Scrub para Framer](framer/README.md) trae una secuencia adicional de 150 fotogramas del render de Silky, lista para vincular al desplazamiento.
+
 ## Abrir y editar
 
 Abre `index.html` en un navegador. No se necesita instalar dependencias ni ejecutar un servidor. Para cambiar copy, colores o disposición, edita el mismo archivo. Los tokens visuales están al comienzo del bloque `<style>`.
