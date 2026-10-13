@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "name": "Silky Pro Palette — Seicento × Beauty Creations",
+  "sourceRevision": "v007",
+  "source": "Seicento_Makeup_School/Web_Scroll/renders/v007_eevee_web_1440_png/seicento_web_{frame:04d}.png",
+  "format": "webp",
+  "width": 1440,
+  "height": 810,
+  "firstFrame": 1,
+  "lastFrame": 120,
+  "frameCount": 120,
+  "filenamePattern": "frame-{frame:04d}.webp",
+  "transparentBackground": true,
+  "quality": 82,
+  "compressionLevel": 6,
+  "sequenceBytes": 3142692,
+  "posterFrame": 64,
+  "alt": "Silky Pro Palette, una colaboración de Seicento y Beauty Creations",
+  "frameMapping": "1 + Math.round(119 * Math.min(1, Math.max(0, progress)))",
+  "stages": [
+    {
+      "id": "frontal_cerrado",
+      "firstFrame": 1,
+      "lastFrame": 6,
+      "description": "Estuche cerrado exactamente de frente: sólo canto horizontal, sin carátula superior visible."
+    },
+    {
+      "id": "apertura_frontal",
+      "firstFrame": 7,
+      "lastFrame": 30,
+      "description": "Apertura de 0 a 90 grados con cámara, centro de encuadre, ancho ortográfico y escala constantes."
+    },
+    {
+      "id": "frontal_espejo",
+      "firstFrame": 31,
+      "lastFrame": 36,
+      "description": "Frontal abierto con espejo rectangular, sin mover cámara ni reducir el producto. Apertura completa visible."
+    },
+    {
+      "id": "transicion_cenital",
+      "firstFrame": 37,
+      "lastFrame": 60,
+      "description": "Transición continua desde el frontal a la vista superior."
+    },
+    {
+      "id": "cenital_abierto",
+      "firstFrame": 61,
+      "lastFrame": 66,
+      "description": "Vista superior de los 35 tonos; tapa vertical y espejo naturalmente de canto."
+    },
+    {
+      "id": "cierre_cenital",
+      "firstFrame": 67,
+      "lastFrame": 84,
+      "description": "Cierre de la tapa manteniendo la vista superior."
+    },
+    {
+      "id": "portada_logos",
+      "firstFrame": 85,
+      "lastFrame": 90,
+      "description": "Pausa con tapa cerrada para leer los logos y el contenido impreso."
+    },
+    {
+      "id": "entrada_brochas",
+      "firstFrame": 91,
+      "lastFrame": 112,
+      "description": "Las brochas entran desde lados opuestos y se asientan paralelas en la zona libre de la tapa."
+    },
+    {
+      "id": "conjunto_final",
+      "firstFrame": 113,
+      "lastFrame": 120,
+      "description": "Estuche cerrado y dos brochas sobre la parte superior de la tapa, sin tapar logos ni contenido impreso."
+    }
+  ],
+  "stills": [
+    {
+      "name": "open",
+      "filename": "detail-open.webp",
+      "sourceFrame": 64,
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "name": "closed",
+      "filename": "detail-closed.webp",
+      "sourceFrame": 90,
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "name": "mirror",
+      "filename": "detail-mirror.webp",
+      "sourceFrame": 33,
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "name": "brushes",
+      "filename": "detail-brushes.webp",
+      "sourceFrame": 120,
+      "width": 1440,
+      "height": 810
+    }
+  ],
+  "verification": {
+    "allFramesPresent": true,
+    "decodedByEncoder": 120,
+    "ffprobeSamples": [
+      {
+        "frame": 1,
+        "width": 1440,
+        "height": 810,
+        "pix_fmt": "yuva420p",
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 1122428
+      },
+      {
+        "frame": 33,
+        "width": 1440,
+        "height": 810,
+        "pix_fmt": "yuva420p",
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 586246
+      },
+      {
+        "frame": 64,
+        "width": 1440,
+        "height": 810,
+        "pix_fmt": "yuva420p",
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 493920
+      },
+      {
+        "frame": 90,
+        "width": 1440,
+        "height": 810,
+        "pix_fmt": "yuva420p",
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 491520
+      },
+      {
+        "frame": 120,
+        "width": 1440,
+        "height": 810,
+        "pix_fmt": "yuva420p",
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 491520
+      }
+    ]
+  },
+  "sourceOriginalsModified": false
+}
