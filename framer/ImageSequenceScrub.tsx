@@ -354,7 +354,7 @@ ImageSequenceScrub.defaultProps = {
     scrollScreens: 4,
     fit: "contain",
     backgroundColor: "#080b14",
-    accessibleLabel: "Animación de la paleta Silky Pro Palette controlada por desplazamiento",
+    accessibleLabel: "Silky Pro Palette, una colaboración de Seicento y Beauty Creations",
 }
 
 addPropertyControls(ImageSequenceScrub, {
@@ -441,6 +441,6 @@ addPropertyControls(ImageSequenceScrub, {
         type: ControlType.String,
         title: "Descripción",
         defaultValue:
-            "Animación de la paleta Silky Pro Palette controlada por desplazamiento",
+            "Silky Pro Palette, una colaboración de Seicento y Beauty Creations",
     },
 })

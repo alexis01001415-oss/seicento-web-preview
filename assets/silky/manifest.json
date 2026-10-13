@@ -1,6 +1,6 @@
 {
   "project": "Seicento Silky",
-  "description": "Material 3D disponible para una sección editorial del producto.",
+  "description": "Imágenes y video de Silky Pro Palette, colaboración de Seicento y Beauty Creations.",
   "video": {
     "file": "silky-film.mp4",
     "durationSeconds": 10,
@@ -49,10 +49,10 @@
     {
       "file": "silky-08-finale.webp",
       "timeSeconds": 9.5,
-      "alt": "Paleta Silky abierta al cierre de la animación."
+      "alt": "Paleta Silky abierta con sus pinceles."
     }
   ],
-  "editorialNote": "El render muestra marcas en el objeto 3D. El material por sí solo no acredita lanzamiento, venta ni colaboración comercial.",
+  "editorialNote": "La colaboración Seicento × Beauty Creations fue confirmada por el responsable del proyecto. El contenido presenta el producto; precio, disponibilidad y condiciones se consultan con Seicento.",
   "photos": [
     {
       "file": "silky-photo-kit.webp",

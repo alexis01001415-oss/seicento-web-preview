@@ -11,7 +11,7 @@ Componente: [`ImageSequenceScrub.tsx`](ImageSequenceScrub.tsx). Convierte el des
 
 ## Secuencia Silky incluida
 
-El archivo viene configurado con los 150 fotogramas WebP exportados del video de Blender, de `frame-0001.webp` a `frame-0150.webp`. Están publicados en:
+El archivo viene configurado con los 150 fotogramas WebP de Silky Pro Palette, la colaboración de Seicento y Beauty Creations, de `frame-0001.webp` a `frame-0150.webp`. Su texto alternativo identifica el producto y la colaboración. Están publicados en:
 
 `https://alexis01001415-oss.github.io/seicento-web-preview/assets/silky/sequence/`
 
