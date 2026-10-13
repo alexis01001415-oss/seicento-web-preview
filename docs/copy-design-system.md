@@ -1,68 +1,104 @@
 # Seicento · Copy y sistema visual
 
-Revisión del 13 de octubre de 2026. Referencia para construir la página en Framer. [Ver demo](https://alexis01001415-oss.github.io/seicento-web-preview/).
+Revisión del 13 de octubre de 2026. Especificación del prototipo local para su construcción en Framer. [Demo del proyecto](https://alexis01001415-oss.github.io/seicento-web-preview/).
 
-## Dirección editorial
+## Dirección editorial y visual
 
-**Público:** personas que quieren estudiar maquillaje, desde principiantes hasta maquilladores que buscan especializarse.
+**Público:** personas que quieren estudiar maquillaje, desde principiantes hasta profesionales que buscan especializarse.
 
-**Promesa:** aprender a maquillar con técnica, práctica y acompañamiento; descubrir una especialidad y construir un portafolio propio.
+**Idea principal:** la pasión se desarrolla con técnica y práctica. La escuela ayuda a aprender, crear un portafolio y descubrir una especialidad.
 
-**Tono:** directo, cercano y aspiracional, con datos que ayuden a decidir. El contenido habla de la formación, la experiencia del estudiante y el producto. Las herramientas de producción visual pertenecen a la documentación técnica.
+**Referencia:** [AirPods Pro de Apple](https://www.apple.com/mx/airpods-pro/). La adaptación usa titulares cortos, una idea por bloque y características asociadas a lo que permiten hacer. El producto se descubre primero en imágenes y después en módulos de detalle. El texto y los recursos conservan la identidad de Seicento.
 
-**Colaboración:** Seicento × Beauty Creations tiene un bloque protagonista inmediatamente después de carreras, con ambos logos, el nombre Silky Pro Palette, fotografías, galería y video. La colaboración fue confirmada por el responsable del proyecto y se incorpora como información de marca.
+**Composición:** portada oscura y centrada, fotografía con gran presencia, secciones claras para comparar opciones, escenario gris claro para Silky y tarjetas de distinta escala. El acento rosa conecta con el maquillaje y los tonos del producto.
 
-## Arquitectura
+**Criterio de copy:** mencionar primero el resultado para quien estudia o usa la paleta; explicarlo con una característica concreta. Usar datos verificables, frases breves y verbos de acción. Los nombres de herramientas de producción se reservan para las instrucciones técnicas.
 
-| Orden | Sección | Título | Contenido y acción |
+## Arquitectura y jerarquía
+
+| Orden | Sección | Título actual | Contenido y acción |
 | --- | --- | --- | --- |
-| 1 | Portada | **H1: Haz del maquillaje tu profesión.** | Técnica, práctica y portafolio. Encontrar carrera o vivir una clase muestra. |
-| 2 | Carreras | H2: ¿Qué tipo de makeup artist quieres ser? | Siete opciones con duración, descripción y enlace individual. |
-| 3 | Seicento × Beauty Creations | H2: Silky Pro Palette. | Colaboración, color y estilo. Conocer la paleta o aprender maquillaje. |
-| 4 | Educación continua | H2: Siempre hay una técnica más por descubrir. | Especialidades de 48 h, intensivos de 60 h y talleres. |
-| 5 | Método Seicento 3D3 | H2: Aprender maquillaje es ponerlo en práctica. | 70 % práctica, 20 % técnica, 10 % fundamentos, en carreras profesionales. |
-| 6 | Experiencia Seicento | H2: Tu formación se construye haciendo. | Black Learn, prácticas, portafolio, estudio fotográfico, Makeup Store y masterclasses. |
-| 7 | Pro Beauty | H2: Tu trabajo merece ser visto. | Portafolios y servicios para conectar con posibles clientes. |
-| 8 | Producciones | H2: La técnica también cuenta historias. | Dos producciones y acceso a proyectos de la comunidad. |
-| 9 | Comunidad | H2: Tu historia también puede empezar aquí. | Más de 20,000 egresados, proyectos finales e historias. |
-| 10 | Respaldo | H2: Formación con respaldo. | SEP, CONOCER e IUM, con el alcance de cada opción. |
-| 11 | Profesores | H2: Aprende de quienes viven el maquillaje. | Equipo docente y esencia de la escuela. |
-| 12 | Campus | H2: Dos campus. Un espacio para crear. | Reforma y Coyoacán, direcciones, teléfonos y recorridos. |
-| 13 | Clase muestra | H2: Antes de elegir, vive Seicento. | Clase muestra gratuita y Brunch + Masterclass en Reforma. |
-| 14 | Inscripción | H2: Dale fecha a lo que quieres aprender. | Elegir programa, encontrar grupo y preparar inscripción. |
-| 15 | Noticias | H2: Sigue aprendiendo. | Book, historia de Nancy Tinoco y maquillaje para clima cálido. |
-| 16 | Preguntas frecuentes | H2: Resolvamos tus dudas. | 16 respuestas, agrupadas por programa, experiencia e inscripción. |
-| 17 | Contacto | H2: Empieza por lo que te apasiona. | Asesoría para elegir carrera y próximo grupo. |
+| 1 | Portada | H1: Tienes la pasión. Aprende la técnica. | Pasión, técnica y práctica. Encontrar carrera o probar una clase gratis. |
+| 2 | Carreras | H2: Encuentra tu especialidad. | Siete opciones con duración y enlace individual. |
+| 3 | Seicento × Beauty Creations | H2: Silky Pro Palette. | Silky: 120 imágenes ligadas al scroll y cuatro bloques de características. |
+| 4 | Educación continua | H2: Sigue sumando técnica. | Especialidades de 48 h, intensivos de 60 h y talleres. |
+| 5 | Método Seicento 3D3 | H2: Aprende haciendo. | 70 % práctica, 20 % técnica y 10 % fundamentos en carreras profesionales. |
+| 6 | Experiencia Seicento | H2: Herramientas para ir más lejos. | Black Learn, prácticas, portafolio, estudio fotográfico, Makeup Store y masterclasses. |
+| 7 | Pro Beauty | H2: Haz que te encuentren. | Portafolio y servicios a la vista de posibles clientes. |
+| 8 | Producciones | H2: Ideas que toman forma. | Trabajos de maquillaje y proyectos de la comunidad. |
+| 9 | Comunidad | H2: El talento se comparte. | Más de 20,000 egresados, prácticas y proyectos finales. |
+| 10 | Respaldo | H2: Formación con respaldo. | SEP, CONOCER e IUM con condiciones por programa. |
+| 11 | Profesores | H2: Experiencia que se enseña. | Equipo docente y experiencia de la escuela. |
+| 12 | Campus | H2: Tu espacio para aprender. | Reforma y Coyoacán: direcciones, teléfonos y recorridos. |
+| 13 | Clase muestra | H2: Tu primera clase. Tu próxima decisión. | Clase muestra gratuita y Brunch + Masterclass en Reforma. |
+| 14 | Inscripción | H2: Empezar es más sencillo de lo que piensas. | Elegir programa, encontrar grupo y preparar inscripción. |
+| 15 | Noticias | H2: Ideas para tu siguiente paso. | Book, Nancy Tinoco y maquillaje en clima cálido. |
+| 16 | Preguntas frecuentes | H2: Lo que quieres saber. | 16 respuestas sobre programas, experiencia e inscripción. |
+| 17 | Contacto | H2: Haz espacio para tu talento. | Asesoría para elegir carrera y próximo grupo. |
 
-Un solo H1; 16 H2; H3 para carreras, temas de FAQ, artículos y módulos. En Framer configura la etiqueta semántica de cada texto por separado de su tamaño visual. El nombre **Método Seicento 3D3** corresponde a la metodología de la escuela.
+Hay **un H1 y 16 H2 en 17 secciones**. Los programas, módulos y temas de FAQ usan H3. La introducción del bento es H3 y sus cuatro beneficios son H4. En Framer configura la etiqueta HTML por separado del tamaño visual. **Método Seicento 3D3** es el nombre de la metodología académica de la escuela.
 
 ## Copy principal
 
 ### Portada
 
-**Haz del maquillaje tu profesión.**
+**Tienes la pasión.
+Aprende la técnica.**
 
-Aprende a preparar la piel, trabajar el color y crear looks con intención. Fórmate como makeup artist con práctica, acompañamiento y un portafolio que muestre lo que sabes hacer.
+Carreras y especialidades en maquillaje. Aprende haciendo, crea tu portafolio y prepárate para dar el siguiente paso.
 
-Acciones: **Encuentra tu carrera** / **Vive una clase muestra**.
+Acciones: **Encuentra tu carrera** / **Prueba una clase gratis**.
 
-Franja de confianza: **Más de 20,000 egresados** · **Programas con incorporación a la SEP** · **Campus Reforma y Coyoacán**.
+Franja de confianza: **+20,000 egresados** · **Reforma y Coyoacán: dos campus en CDMX** · **Formación con respaldo: programas incorporados a la SEP**.
 
 ### Seicento × Beauty Creations
 
 **Silky Pro Palette.**
 
-El color es el punto de partida. Tu técnica hace la diferencia.
+La colaboración de Seicento y Beauty Creations.
+35 tonos para pasar de una idea a tu próximo look.
 
-Conoce Silky Pro Palette, la colaboración de Seicento con Beauty Creations. Una invitación a explorar el color, combinar tonos y darle forma a tu estilo.
+Enlace inicial: **Conoce lo que puedes crear**.
 
-Imagina tu próximo look. Prueba una combinación. Descubre todo lo que puedes expresar con el maquillaje.
+Texto inicial de la secuencia: **35 tonos. Todo por crear.**
 
-Acciones: **Quiero conocer la paleta** / **Quiero aprender maquillaje**.
+Las vistas acompañan tres mensajes:
 
-Galería: **Tu próximo look empieza con una idea.** Acércate a Silky Pro Palette. Recorre sus tonos y encuentra la combinación que quieras hacer tuya.
+- **Espejo integrado:** Cada detalle, a la vista.
+- **Neutros. Pasteles. Colores vivos.:** El próximo look es tuyo.
+- **Seicento × Beauty Creations:** Una colaboración. Muchas posibilidades.
 
-El CTA de producto abre el WhatsApp oficial con un mensaje sobre la colaboración. La página no atribuye precio, disponibilidad, exclusividad ni inclusión en colegiaturas al producto.
+Acceso directo: **Ver características**.
+
+### Bento de producto
+
+Introducción: **Más formas de combinar. Más looks que descubrir.**
+Color, acabados y detalles que acompañan tu práctica.
+
+| Bloque | Característica | Titular | Texto |
+| --- | --- | --- | --- |
+| Paleta completa | Silky Pro Palette | 35 tonos. El look es tuyo. | Neutros, pasteles y colores vivos. Explora combinaciones y practica nuevas técnicas con una misma paleta. |
+| Acabados | Acabados mate y brillantes | Profundidad. Y ese punto de luz. | Construye profundidad con los mates. Añade acentos con los tonos brillantes. |
+| Espejo | Espejo integrado | Cada detalle, a la vista. | Sigue la aplicación y revisa el resultado desde la propia paleta. |
+| Combinaciones | Una gama. Muchas combinaciones. | De lo sutil a lo inesperado. | Una transición suave. Un contraste de color. Practica con tonos neutros o explora combinaciones más atrevidas. |
+
+Acciones: **Quiero conocer Silky** / **Aprende a crear tus looks**.
+
+Las fotografías aportadas permiten observar las cinco filas de siete tonos, los acabados y el espejo. Los beneficios describen usos creativos de esas características. No se afirman promesas de pigmentación, duración, composición, resistencia al agua o atributos de fórmula; las brochas que aparecen en el material visual no se presentan como incluidas en la compra.
+
+### Siete opciones de carrera
+
+| Programa | Duración |
+| --- | --- |
+| Pro Master | 14 meses |
+| Integral | 12 meses |
+| Social y Novias | 9 meses |
+| Maquillaje Social | 6 meses |
+| Social y Novias | 12 meses |
+| Integral + FX | 12 meses |
+| Integral + Editorial | 12 meses |
+
+Las tres primeras opciones son tarjetas principales; las otras cuatro aparecen como filas compactas. Cada una enlaza a su ficha oficial.
 
 ## Preguntas frecuentes · Copy completo
 
@@ -72,7 +108,7 @@ Sí. La Carrera Integral comienza con los fundamentos y no requiere experiencia 
 
 ### ¿Cuánto duran las carreras?
 
-Maquillaje Social tiene una opción de 6 meses; Social y Novias, de 9 y 12 meses; Integral, Integral + FX e Integral + Editorial, de 12 meses; y Pro Master, de 14 meses. Revisa las opciones de campus y grupo en la [oferta de carreras](https://alexis01001415-oss.github.io/seicento-web-preview/#carreras).
+Maquillaje Social tiene una opción de 6 meses; Social y Novias, de 9 y 12 meses; Integral, Integral + FX e Integral + Editorial, de 12 meses; y Pro Master, de 14 meses. Revisa las opciones de campus y grupo en la [oferta de carreras](../index.html#carreras).
 
 ### ¿Qué puedo estudiar si ya tengo experiencia?
 
@@ -108,7 +144,7 @@ Pro Beauty es una plataforma para mostrar tu portafolio y tus servicios a person
 
 ### ¿Cuál es la colaboración con Beauty Creations?
 
-Seicento y Beauty Creations colaboran en Silky Pro Palette. Puedes conocer la paleta y explorar sus tonos en nuestra [sección de la colaboración](https://alexis01001415-oss.github.io/seicento-web-preview/#silky). Escríbenos para recibir información sobre el producto.
+Silky Pro Palette es la colaboración de Seicento y Beauty Creations: una paleta de 35 tonos, con acabados mate y brillantes, colores neutros y vivos, y espejo integrado. Descubre sus detalles en la [sección de la colaboración](../index.html#silky).
 
 ### ¿Cuánto cuesta estudiar y qué opciones de pago hay?
 
@@ -128,66 +164,90 @@ Sí. Puedes solicitar una visita y conocer la clase muestra gratuita. El Brunch 
 
 ### ¿Dónde están los campus?
 
-Reforma está en Londres 102, planta alta, colonia Juárez, Cuauhtémoc. Coyoacán está en Av. Miguel Ángel de Quevedo 773, San Francisco, Coyoacán. Ambos están en Ciudad de México. Encuentra teléfonos y recorridos en la [sección de campus](https://alexis01001415-oss.github.io/seicento-web-preview/#campus).
+Reforma está en Londres 102, planta alta, colonia Juárez, Cuauhtémoc. Coyoacán está en Av. Miguel Ángel de Quevedo 773, San Francisco, Coyoacán. Ambos están en Ciudad de México. Encuentra teléfonos y recorridos en la [sección de campus](../index.html#campus).
 
 ## Design system para Framer
 
 ### Colores
 
-| Token | Valor | Uso |
+| Token o aplicación | Valor | Uso |
 | --- | --- | --- |
-| ink | #0B0A0B | Fondo principal |
-| surface | #171516 | Navegación y respaldo |
-| ivory | #F5F2EF | Texto sobre oscuro y secciones claras |
-| paper | #EAE5DF | Educación continua, comunidad y campus |
-| muted | #B9B2AD | Texto secundario sobre oscuro |
-| rule | #343032 | Separadores oscuros |
-| accent | #CDB69E | Etiquetas sobre oscuro y foco |
-| muted-light | #5F5B59 | Texto secundario sobre claro |
-| accent-light | #785F4B | Etiquetas sobre claro |
-| silky | #080B14 | Fondo de la colaboración |
+| ink | #080809 | Fondo oscuro principal |
+| surface | #18181B | Superficies oscuras |
+| light / text | #F5F5F7 | Secciones claras y texto sobre oscuro |
+| paper | #ECECF0 | Fondo del producto |
+| muted | #96969F | Texto secundario sobre oscuro |
+| accent | #F4B7CF | Botones principales y acentos |
+| rule | #303035 | Separadores sobre oscuro |
+| Texto sobre claro | #1D1D1F | Titulares y texto principal |
+| Texto secundario claro | #73737C | Descripciones sobre claro |
+| Bento espejo | #D7DCE7 | Tarjeta del espejo |
+| Bento acabados | #0E1220 | Fondo oscuro de las texturas |
+| Progreso de secuencia | #9A5677 | Indicador de avance |
 
-### Tipografía y composición
+El escenario de producto usa un degradado radial de blanco a #F4F4F6 y #ECECF0. Permite leer el estuche azul marino y conserva la transparencia de la secuencia.
 
-- **Familia:** Manrope, pesos 400–700. Los logos conservan su diseño original.
-- **H1:** 56–116 px, peso 500, interlineado 0.98 y tracking -0.075 em.
-- **H2:** 42–78 px, peso 500, interlineado 1.04 y tracking -0.065 em.
-- **H3:** 23–52 px según componente. Cuerpo: 13–20 px.
-- **Contenedor:** máximo 1280 px; márgenes laterales de 52 px en escritorio, 32 px en tableta y 20 px en móvil.
-- **Espacio vertical:** 88–152 px por sección. Tarjetas rectangulares y separadores de 1 px.
-- **Color editorial:** las fotos de maquillaje aportan los colores intensos. Las secciones claras organizan la información académica.
+### Tipografía y espacio
 
-### Componentes y adaptación
+- **Familia:** Manrope, pesos 400–800. Los logos conservan su diseño.
+- **H1:** `clamp(52px, 7.2vw, 100px)`, peso 700, interlineado 1.04 y tracking -0.06 em. En móvil usa ajustes de 44–65 px y 45 px por debajo de 480 px.
+- **H2:** `clamp(38px, 4.9vw, 66px)`, peso 700, interlineado 1.07 y tracking -0.05 em. El título Silky llega a 82 px.
+- **H3:** base de 28 px, con escala según módulo. Cuerpo de 14–20 px; etiquetas de 10–14 px.
+- **Contenedor:** máximo 1160 px; márgenes laterales de 40 px en escritorio, 24 px en tableta y 20 px en móvil.
+- **Secciones:** 120 px de espacio vertical; 90 px en tableta y 78 px en móvil.
+- **Tarjetas:** radios de 24–30 px; separaciones habituales de 16–22 px. Botones redondeados de 48 px de altura mínima.
+- **Navegación:** barra fija de 64 px; puntos de adaptación en 1000, 760 y 480 px.
 
-- Botón principal de 54 px de altura mínima; enlace secundario subrayado.
-- Tres tarjetas principales de carrera y cuatro opciones compactas, con enlaces separados.
-- Logos Seicento × Beauty Creations juntos sobre oscuro, sin deformaciones.
-- Seis beneficios en tres columnas; dos en tableta y una en móvil.
-- Noticias en tres columnas, con portadas en proporción original; una columna en móvil.
-- FAQ con acordeones nativos accesibles por teclado. Introducción fija en escritorio y normal en móvil.
-- Menú móvil, textos alternativos y foco visible. La galería respeta movimiento reducido y no empieza a reproducirse sola.
+### Bento y adaptación
 
-## Recursos e implementación
+En escritorio, el área superior usa 12 columnas: la paleta ocupa siete columnas y dos filas; acabados y espejo ocupan cinco columnas y una fila cada uno. La franja de combinaciones completa el conjunto debajo, con copy y muestras gráficas de color. Son cuatro bloques con tamaños y tratamientos distintos.
 
-El contenido completo se encuentra en [index.html](../index.html). La galería de Silky usa ocho vistas, un MP4 de 10 segundos y dos fotografías. El [manifiesto de recursos](../assets/silky/manifest.json) registra nombres y textos alternativos.
+En tableta, la paleta pasa al ancho completo y las dos tarjetas de detalle comparten la fila siguiente. Por debajo de 480 px, cada bloque ocupa una fila. Las muestras de color son decorativas y no representan una carta de color calibrada.
 
-Para el efecto ligado al desplazamiento en Framer usa [ImageSequenceScrub.tsx](../framer/ImageSequenceScrub.tsx) y su [guía de instalación](../framer/README.md). Hay 150 fotogramas WebP disponibles. El texto accesible identifica a Silky Pro Palette y la colaboración.
+Los programas se presentan en tres tarjetas y cuatro filas compactas. Los seis beneficios académicos se distribuyen en tres, dos o una columna según el ancho. La FAQ usa elementos `details` nativos y una introducción fija sólo en escritorio.
 
-La demo conserva su etiqueta de vista previa y noindex. Los contactos se dirigen a Seicento; no hay un formulario propio que almacene datos.
+## Secuencia de imágenes y accesibilidad
+
+La implementación de portada está dividida entre [index.html](../index.html), [styles.css](../styles.css) y [assets/scroll-sequence.js](../assets/scroll-sequence.js).
+
+| Parámetro | Valor |
+| --- | --- |
+| Carpeta | `assets/silky/scroll-v7/` |
+| Archivos | `frame-0001.webp` a `frame-0120.webp` |
+| Dimensiones | 1440 × 810 px |
+| Fondo | Transparente, WebP con canal alfa |
+| Compresión | Calidad 82 |
+| Peso de la secuencia | 3,142,692 bytes: 3.14 MB, aproximadamente 3.00 MiB |
+| Imagen estática | Fotograma 64: paleta abierta y 35 tonos |
+| Mapeo | `1 + Math.round(119 * progress)` con progreso entre 0 y 1 |
+| Sección de scroll | 360 svh en escritorio; 300 svh en móvil |
+| Escenario fijo | Alto de ventana menos 64 px de navegación |
+| Solicitudes y caché | Cuatro solicitudes simultáneas; 20 imágenes en escritorio y 12 en móvil |
+
+El cargador empieza al acercarse a la sección y prioriza la imagen que corresponde al scroll, con anticipación de las cercanas. Mantiene una imagen disponible mientras llega la solicitada. El texto inicial se desvanece durante la apertura; las siguientes leyendas acompañan el espejo, los tonos y la colaboración.
+
+Con `prefers-reduced-motion`, el recorrido largo se reduce a una vista estática del fotograma 64 y desaparecen las transiciones. La imagen de respaldo también aparece antes de que el canvas esté listo, cuando no hay JavaScript o si el canvas no puede dibujar. Los beneficios se conservan como texto HTML en el bento. Un enlace permite saltar directamente a las características.
+
+En móvil, la escala aumenta para aprovechar el espacio sin cortar el producto y el recorrido es más corto. El canvas limita la densidad de píxeles a 1.75. La caché acotada evita retener simultáneamente los 120 fotogramas decodificados.
+
+Las etapas están en el [manifiesto v007](../assets/silky/scroll-v7/manifest.json): apertura 7–30, espejo 31–36, vista de tonos 61–66, cierre 67–84 y conjunto final 113–120. Las versiones antiguas de ocho vistas y 150 imágenes verticales permanecen archivadas entre los recursos y no controlan la portada actual.
+
+Para Framer, utiliza [ImageSequenceScrub.tsx](../framer/ImageSequenceScrub.tsx) con la [guía de configuración](../framer/README.md). El componente aporta la secuencia; el copy y el bento se construyen como capas y elementos de Framer.
+
+La demo conserva `noindex, nofollow` e identificación de vista previa. Esta especificación describe los archivos de trabajo de la revisión actual.
 
 ## Fuentes y alcance
 
-Información revisada el 13 de octubre de 2026:
-
-- [Portada oficial](https://seicento.edu.mx/): más de 20 mil egresados, clase muestra gratuita, masterclasses, comunidad y logos de marca. [Logo Beauty Creations](https://seicento.edu.mx/wp-content/uploads/2026/02/Beauty-Creations-2.png).
-- [Oferta educativa](https://seicento.edu.mx/carreras/) y sus fichas: siete variantes de carrera, duraciones, formatos y beneficios. Cada tarjeta de la demo enlaza a su ficha original.
+- [AirPods Pro de Apple](https://www.apple.com/mx/airpods-pro/): referencia de presentación y organización de beneficios. El copy de Seicento se escribe para sus estudiantes y su producto.
+- [Portada oficial](https://seicento.edu.mx/): más de 20 mil egresados, clase muestra, masterclasses, comunidad y logos. [Logo Beauty Creations](https://seicento.edu.mx/wp-content/uploads/2026/02/Beauty-Creations-2.png).
+- [Oferta educativa](https://seicento.edu.mx/carreras/) y fichas individuales: programas, duraciones y formatos. La demo enlaza desde cada opción a su ficha.
 - [Carrera Integral](https://seicento.edu.mx/producto/carrera-integral-12-meses/): ingreso sin experiencia, kit gradual y opciones de pago. [Ficha 2026](https://seicento.edu.mx/wp-content/uploads/2026/02/CARRERA-Integral-12meses-288h-Vespertino.pdf): Black Learn puede tener costo adicional.
-- [Método 3D3](https://seicento.edu.mx/metodo-3d3/): distribución 70/20/10 en carreras profesionales.
-- [Experiencia Seicento](https://seicento.edu.mx/porque-estudiar-en-seicento/) y [Pro Beauty](https://seicento.edu.mx/plataforma_probeauty/): recursos del alumno y visibilidad profesional. Las condiciones dependen del programa; Pro Beauty no garantiza contratación.
+- [Método 3D3](https://seicento.edu.mx/metodo-3d3/): distribución 70/20/10 de las carreras profesionales.
+- [Experiencia Seicento](https://seicento.edu.mx/porque-estudiar-en-seicento/) y [Pro Beauty](https://seicento.edu.mx/plataforma_probeauty/): recursos del alumno y visibilidad profesional, con condiciones por programa.
 - [Comunidad](https://seicento.edu.mx/comunidad-seicento/), [profesores](https://seicento.edu.mx/profesores/) y [campus](https://seicento.edu.mx/campus/).
-- [Brunch + Masterclass](https://seicento.edu.mx/brunchmasterclass/): experiencia en Campus Reforma, sin fecha fija publicada. [Calendario](https://seicento.edu.mx/calendario/): próximos grupos.
-- [SEP](https://seicento.edu.mx/sep/) e [IUM](https://seicento.edu.mx/ium/): se describe el alcance por programa. IUM aplica a Integral 12 meses y Pro Master 14 meses con requisitos académicos.
-- [Noticias](https://seicento.edu.mx/noticias/): las tres tarjetas enlazan a artículos verificados y usan sus portadas originales, optimizadas a WebP.
-- La colaboración Seicento × Beauty Creations fue confirmada por el responsable del proyecto. El material de Silky procede de sus archivos de producto.
+- [Brunch + Masterclass](https://seicento.edu.mx/brunchmasterclass/): experiencia en Reforma. [Calendario](https://seicento.edu.mx/calendario/): próximos grupos.
+- [SEP](https://seicento.edu.mx/sep/) e [IUM](https://seicento.edu.mx/ium/): reconocimiento y condiciones académicas. IUM contempla Integral de 12 meses y Pro Master de 14 meses.
+- [Noticias](https://seicento.edu.mx/noticias/): artículos enlazados y portadas publicadas por la escuela.
+- Material de producto aportado para el proyecto: fotografías `R3_03413.jpg` y `R3_03427.jpg`, además de la secuencia v007. La colaboración Seicento × Beauty Creations fue confirmada por el responsable del proyecto. La cantidad de tonos, acabados visibles y espejo se describen a partir de esas imágenes.
 
-Se mantienen los nombres oficiales de programas y marcas. La página no fija precios ni fechas de inicio; enlaza a la información vigente y a admisiones. Los recursos de marca pertenecen a sus titulares.
+Los recursos de marca pertenecen a sus titulares. Las condiciones comerciales y los próximos grupos se consultan en los enlaces oficiales.

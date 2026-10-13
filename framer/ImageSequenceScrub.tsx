@@ -11,6 +11,7 @@ type Props = {
     fileExtension: string
     firstFrame: number
     frameCount: number
+    posterFrame: number
     padDigits: number
     scrollScreens: number
     fit: "contain" | "cover"
@@ -20,7 +21,7 @@ type Props = {
 }
 
 const SILKY_BASE =
-    "https://alexis01001415-oss.github.io/seicento-web-preview/assets/silky/sequence"
+    "https://alexis01001415-oss.github.io/seicento-web-preview/assets/silky/scroll-v7"
 
 function clamp(value: number, min: number, max: number) {
     return Math.min(max, Math.max(min, value))
@@ -79,6 +80,13 @@ export default function ImageSequenceScrub(props: Props) {
             props.padDigits,
         ]
     )
+    // Reposo is the one-based position in the sequence, independent of file numbering.
+    const requestedPoster = Number(props.posterFrame)
+    const posterIndex = clamp(
+        Math.floor(Number.isFinite(requestedPoster) ? requestedPoster : 64) - 1,
+        0,
+        Math.max(0, urls.length - 1)
+    )
 
     React.useEffect(() => {
         if (isStatic || !urls.length) return
@@ -89,16 +97,16 @@ export default function ImageSequenceScrub(props: Props) {
         const context = canvas?.getContext("2d")
         if (!section || !stage || !canvas || !context) return
 
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)")
         let disposed = false
         let raf = 0
-        let target = 0
+        let target = reduceMotion.matches ? posterIndex : 0
         let painted = -1
         let activeLoads = 0
         let queue: number[] = []
         const queued = new Set<number>()
         const loading = new Set<number>()
         const cache = new Map<number, HTMLImageElement>()
-        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)")
 
         function remember(index: number, image: HTMLImageElement) {
             cache.delete(index)
@@ -192,6 +200,13 @@ export default function ImageSequenceScrub(props: Props) {
         }
 
         function preloadNearby(index: number, previous: number) {
+            if (reduceMotion.matches) {
+                queue = []
+                queued.clear()
+                enqueue(posterIndex, true)
+                pump()
+                return
+            }
             queue = queue.filter((queuedIndex) => {
                 const keep = Math.abs(queuedIndex - index) <= 12
                 if (!keep) queued.delete(queuedIndex)
@@ -218,14 +233,14 @@ export default function ImageSequenceScrub(props: Props) {
             else if (cache.has(painted)) paint(painted)
         }
 
-        function updateFromScroll() {
+        function updateFromScroll(force = false) {
             const rect = section.getBoundingClientRect()
             const travel = Math.max(1, rect.height - stage.clientHeight)
-            const progress = reduceMotion.matches
-                ? 0
-                : clamp(-rect.top / travel, 0, 1)
-            const next = Math.round(progress * (urls.length - 1))
-            if (next !== target) {
+            const progress = clamp(-rect.top / travel, 0, 1)
+            const next = reduceMotion.matches
+                ? posterIndex
+                : Math.round(progress * (urls.length - 1))
+            if (force || next !== target) {
                 const previous = target
                 target = next
                 if (cache.has(target)) paint(target)
@@ -241,6 +256,12 @@ export default function ImageSequenceScrub(props: Props) {
             })
         }
 
+        function onMotionPreferenceChange() {
+            queue = []
+            queued.clear()
+            updateFromScroll(true)
+        }
+
         const observer = new ResizeObserver(() => {
             resizeCanvas()
             scheduleUpdate()
@@ -249,7 +270,7 @@ export default function ImageSequenceScrub(props: Props) {
         observer.observe(section)
         window.addEventListener("scroll", scheduleUpdate, { passive: true })
         window.addEventListener("resize", scheduleUpdate)
-        reduceMotion.addEventListener("change", scheduleUpdate)
+        reduceMotion.addEventListener("change", onMotionPreferenceChange)
 
         resizeCanvas()
         updateFromScroll()
@@ -260,16 +281,16 @@ export default function ImageSequenceScrub(props: Props) {
             window.cancelAnimationFrame(raf)
             window.removeEventListener("scroll", scheduleUpdate)
             window.removeEventListener("resize", scheduleUpdate)
-            reduceMotion.removeEventListener("change", scheduleUpdate)
+            reduceMotion.removeEventListener("change", onMotionPreferenceChange)
             observer.disconnect()
             queue = []
             queued.clear()
             cache.clear()
         }
-    }, [urls, fit, backgroundColor, isStatic])
+    }, [urls, fit, backgroundColor, isStatic, posterIndex])
 
-    const screens = clamp(Number(scrollScreens) || 4, 2, 12)
-    const firstUrl = urls[0]
+    const screens = clamp(Number(scrollScreens) || 3.5, 2, 12)
+    const posterUrl = urls[posterIndex]
 
     return (
         <div
@@ -294,9 +315,9 @@ export default function ImageSequenceScrub(props: Props) {
                     backgroundColor,
                 }}
             >
-                {firstUrl ? (
+                {posterUrl ? (
                     <img
-                        src={firstUrl}
+                        src={posterUrl}
                         alt=""
                         aria-hidden="true"
                         style={{
@@ -324,7 +345,7 @@ export default function ImageSequenceScrub(props: Props) {
                         Añade imágenes o configura una secuencia numerada.
                     </div>
                 )}
-                {!isStatic && firstUrl && (
+                {!isStatic && posterUrl && (
                     <canvas
                         ref={canvasRef}
                         aria-hidden="true"
@@ -349,11 +370,12 @@ ImageSequenceScrub.defaultProps = {
     filePrefix: "frame-",
     fileExtension: "webp",
     firstFrame: 1,
-    frameCount: 150,
+    frameCount: 120,
+    posterFrame: 64,
     padDigits: 4,
-    scrollScreens: 4,
+    scrollScreens: 3.5,
     fit: "contain",
-    backgroundColor: "#080b14",
+    backgroundColor: "#ececf0",
     accessibleLabel: "Silky Pro Palette, una colaboración de Seicento y Beauty Creations",
 }
 
@@ -402,7 +424,7 @@ addPropertyControls(ImageSequenceScrub, {
     frameCount: {
         type: ControlType.Number,
         title: "Cantidad",
-        defaultValue: 150,
+        defaultValue: 120,
         min: 1,
         max: 400,
         step: 1,
@@ -417,10 +439,18 @@ addPropertyControls(ImageSequenceScrub, {
         step: 1,
         hidden: (props) => props.sourceMode !== "pattern",
     },
+    posterFrame: {
+        type: ControlType.Number,
+        title: "Reposo",
+        defaultValue: 64,
+        min: 1,
+        max: 400,
+        step: 1,
+    },
     scrollScreens: {
         type: ControlType.Number,
         title: "Scroll (pantallas)",
-        defaultValue: 4,
+        defaultValue: 3.5,
         min: 2,
         max: 12,
         step: 0.25,
@@ -435,7 +465,7 @@ addPropertyControls(ImageSequenceScrub, {
     backgroundColor: {
         type: ControlType.Color,
         title: "Fondo",
-        defaultValue: "#080b14",
+        defaultValue: "#ececf0",
     },
     accessibleLabel: {
         type: ControlType.String,
