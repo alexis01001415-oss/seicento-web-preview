@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-13",
+  "tool": "image_gen",
+  "method": "Edición de imagen en dos pasos con transparent_background: true. Extracción del fondo del retrato base; después caracterización de fantasía a partir de ese mismo retrato transparente.",
+  "subjects": "Modelo ficticia adulta generada con IA. Comparativa ilustrativa, no un trabajo real de Seicento.",
+  "original_provenance": "docs/makeup-image-prompts.json",
+  "images": [
+    {
+      "path": "assets/makeup-comparison/before-transparent.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "references": [
+        "assets/makeup-comparison/before.png"
+      ],
+      "prompt": "Use case: background-extraction. Edit the supplied photograph for a precisely aligned before/after makeup website slider. Remove ONLY the studio background, replacing every background pixel with true fully transparent alpha. Keep the complete woman, her natural face with no added makeup, eyes, skin texture, hair strands, black top, exact pose, proportions, lighting, expression and position unchanged. Preserve the original 1536x1024 landscape canvas and the exact subject position and scale; do not crop, enlarge, recenter, rotate or redraw the person. Clean professional cutout with natural fine hair edges and no taupe halo. Output a PNG with real transparency. NO checkerboard drawn into pixels, NO colored backdrop, NO white or black backdrop, NO cast shadow outside the cutout, no text, no other changes."
+    },
+    {
+      "path": "assets/makeup-comparison/after-fantasy-transparent.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "references": [
+        "assets/makeup-comparison/before-transparent.png",
+        "assets/marmol.webp",
+        "assets/alicia.webp"
+      ],
+      "prompt": "Use case: identity-preserve. Create a spectacular professional special-effects / fantasy makeup AFTER image for an interactive before/after slider. Image 1 is the exact person/edit target and the mandatory composition. Images 2 and 3 are ONLY inspiration for the extraordinary complexity of makeup (sculptural flowers, painted skin, editorial fantasy); do NOT copy their person, pose, camera or background.\nMANDATORY ALIGNMENT: Keep Image 1's exact adult woman, recognizable identity, head location, eyes/nose/mouth landmarks, straight frontal gaze, closed-lip neutral expression, hairstyle/hairline, shoulders, black crew-neck shirt, camera scale and 1536x1024 landscape canvas. Do not enlarge, shift or crop her. Preserve the real transparent background and keep all space outside the person fully transparent, with clean natural cutout edges.\nTRANSFORMATION: Replace the subtle beauty makeup with an exceptionally elaborate handcrafted fantasy character called an iridescent porcelain orchid. Transform the ENTIRE face, forehead, ears and exposed neck using opaque pearlescent turquoise, icy aqua, violet and deep magenta artistic face/body paint. Dramatic ornamental eye makeup: sweeping purple-to-fuchsia gradients, crisp graphic black shapes, gold metallic accents, elaborate defined lashes, delicate pearl and crystal details placed along the brow/temples. Sculpted raised prosthetic petal textures on the temples and outer cheeks, finely painted porcelain-like cracked patterns with thin gold seams (decorative porcelain, NOT wounds), elegant botanical filigree, and layered small sculptural orchid petal appliques integrated into the brow edges and sides of the face. Build visible dimensional textures, hand-painted highlights and shadows, artisanal detail across both halves. Deep violet-magenta sculpted lip color. Continue coherent delicate floral patterns and pearl details down the exposed neck. The result should feel like a highly elaborate beauty-school final artistic makeup project or cinematic fantasy character, instantly and dramatically different from the natural face. It must be richly colorful and intricate, not an ordinary evening look. Preserve her anatomical features underneath the artistic paint and small prosthetic details. Keep ornamentation close to the head silhouette and within the center 50% of the image so nothing is lost in the mobile crop. Do not add a giant headdress or external props.\nPhotorealistic studio beauty photograph of practical makeup, not an illustration, CGI or filter. Same original diffuse frontal light. Keep the black top unchanged. NO grey/white/black/photo background, NO checkerboard graphic, NO colored glow or shadow outside the alpha silhouette, NO text, NO logos, NO labels, no blood or injury. Output exactly one full photograph with a genuine transparent alpha channel."
+    }
+  ]
+}

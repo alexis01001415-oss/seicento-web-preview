@@ -25,7 +25,7 @@ Revisión del 13 de octubre de 2026. Especificación del prototipo local para su
 | 5 | Método Seicento 3D3 | H2: Aprende haciendo. | 70 % práctica, 20 % técnica y 10 % fundamentos en carreras profesionales. |
 | 6 | Experiencia Seicento | H2: Herramientas para ir más lejos. | Black Learn, prácticas, portafolio, estudio fotográfico, Makeup Store y masterclasses. |
 | 7 | Pro Beauty | H2: Haz que te encuentren. | Portafolio y servicios a la vista de posibles clientes. |
-| 8 | Antes / Después | H2: Misma persona. Otra expresión. | Comparativa ilustrativa de maquillaje con IA, arrastre y control de teclado. |
+| 8 | Antes / Después | H2: Misma persona. Otra expresión. | Comparativa ilustrativa de maquillaje FX y fantasía con imágenes de IA transparentes, arrastre y control de teclado. |
 | 9 | Producciones | H2: Ideas que toman forma. | Trabajos de maquillaje y proyectos de la comunidad. |
 | 10 | Comunidad | H2: El talento se comparte. | Más de 20,000 egresados, prácticas y proyectos finales. |
 | 11 | Respaldo | H2: Formación con respaldo. | SEP, CONOCER e IUM con condiciones por programa. |
@@ -302,13 +302,15 @@ El 13 de octubre de 2026, el responsable del proyecto confirmó que **se incluye
 
 **Maquillaje en detalle**
 **Misma persona. Otra expresión.**
-Color, definición y acabado. Desliza y descubre cómo cambia un look.
+Color, textura y caracterización. Desliza y descubre cómo nace un personaje.
 
 Etiquetas: **Antes** / **Después**. Instrucción: **Arrastra la línea o usa las flechas del teclado.** Botones: **Ver antes** / **Ver después**. Identificación visible: **Comparativa ilustrativa creada con IA.** Acción: **Aprende a crear tu propio estilo** → carreras.
 
-La modelo es ficticia y adulta. La imagen con maquillaje es una edición de la imagen base; mantiene identidad, postura, vestuario, iluminación y composición. No representa una alumna, un cliente ni un resultado realizado por Seicento. Archivos en `assets/makeup-comparison/`; prompts y proceso en `docs/makeup-image-prompts.json`, generados con la herramienta integrada `image_gen`.
+La modelo es ficticia y adulta. La imagen con maquillaje conserva la identidad y el encuadre de la imagen base. El look de efectos especiales y fantasía combina turquesa y violeta, pétalos, perlas y detalles de porcelana dorada en rostro y cuello. No representa una alumna, un cliente ni un resultado realizado por Seicento. Los archivos actuales son `assets/makeup-comparison/before-transparent.png` y `assets/makeup-comparison/after-fantasy-transparent.png`: PNG de 1536 × 1024 píxeles con canal alfa y fondo transparente. Los prompts y el proceso de generación con la herramienta integrada `image_gen` se registran en `docs/makeup-fx-image-prompts.json`.
 
-La imagen base completa queda debajo; la capa Antes se recorta mediante `clip-path`. El control nativo `range` va de 0 a 100 y anuncia las proporciones visibles de cada imagen. El arrastre horizontal funciona con ratón o contacto táctil, preservando el desplazamiento vertical. Diseño 3:2 en escritorio y recorte compartido 4:5 en móvil. Las imágenes utilizan carga diferida. Si una falla, se muestra la disponible y se desactiva la interacción.
+Las dos capas se recortan mediante `clip-path` de forma complementaria: Antes ocupa el lado izquierdo del divisor y Después el derecho. Así se evita que una capa aparezca por las zonas transparentes de la otra. El escenario no añade un fondo rectangular ni esquinas que recorten la silueta; se ve el fondo de la sección. El divisor tiene contraste tanto sobre las imágenes como sobre ese fondo claro. El control nativo `range` va de 0 a 100 y anuncia las proporciones visibles de cada imagen. El arrastre horizontal funciona con ratón o contacto táctil, preservando el desplazamiento vertical. Diseño 3:2 en escritorio y recorte compartido 4:5 en móvil. Las imágenes utilizan carga diferida. Si una falla, se muestra la disponible completa y se desactiva la interacción.
+
+Se conserva `docs/makeup-image-prompts.json` como registro histórico de la primera comparativa, que utilizaba `before.png` y `after.png` con un maquillaje más discreto. La nota visible de creación con IA se mantiene en la versión actual.
 
 ## Pie de página completo
 

@@ -4,13 +4,15 @@
 .comparison-heading .eyebrow{color:#7b6572}
 .comparison-intro{max-width:520px;margin:24px auto 0;color:#6b6b73;font-size:18px;line-height:1.55}
 .comparison-figure{width:min(100%,900px);margin:0 auto}
-.comparison-stage{position:relative;isolation:isolate;aspect-ratio:3/2;overflow:hidden;border-radius:30px;background:#e7e4e3;touch-action:pan-y}
+.comparison-stage{position:relative;isolation:isolate;aspect-ratio:3/2;overflow:hidden;background:transparent;touch-action:pan-y}
 .comparison-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;user-select:none;-webkit-user-drag:none;pointer-events:none}
 .comparison-before{clip-path:inset(0 calc(100% - var(--comparison-position)) 0 0)}
+/* Complementary clips keep the other portrait out of transparent pixels. */
+.comparison-after{clip-path:inset(0 0 0 var(--comparison-position))}
 .comparison-image-label{position:absolute;top:24px;z-index:2;display:block;padding:8px 14px;border:1px solid #ffffff52;border-radius:30px;background:#17171975;color:#fff;backdrop-filter:blur(16px);font-size:11px;font-weight:600;line-height:1.3;pointer-events:none;transition:opacity .15s}
 .comparison-label-before{left:24px}
 .comparison-label-after{right:24px}
-.comparison-divider{position:absolute;inset-block:0;left:var(--comparison-position);z-index:3;width:2px;background:#ffffffec;box-shadow:0 0 12px #0002;transform:translateX(-50%);pointer-events:none}
+.comparison-divider{position:absolute;inset-block:0;left:var(--comparison-position);z-index:3;width:2px;background:#716875;box-shadow:0 0 0 1px #ffffffb3;transform:translateX(-50%);pointer-events:none}
 .comparison-handle{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:48px;height:48px;border:1px solid #fff;border-radius:50%;background:#fffffff0;color:#343137;box-shadow:0 4px 20px #0002;transform:translate(-50%,-50%)}
 .comparison-range{position:absolute;inset:0;z-index:4;display:block;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;touch-action:pan-y}
 .comparison-stage:has(.comparison-range:focus-visible){outline:3px solid #9b4d74;outline-offset:6px}
@@ -35,7 +37,6 @@
 @media(max-width:760px){
   .comparison-heading{margin-bottom:32px}
   .comparison-intro{max-width:440px;font-size:16px;margin-top:20px}
-  .comparison-stage{border-radius:24px}
   .comparison-image-label{top:18px}
   .comparison-label-before{left:18px}
   .comparison-label-after{right:18px}
@@ -43,7 +44,7 @@
   .comparison-toolbar>p{font-size:11px}
 }
 @media(max-width:480px){
-  .comparison-stage{aspect-ratio:4/5;border-radius:22px}
+  .comparison-stage{aspect-ratio:4/5}
   .comparison-image-label{top:16px;padding:7px 12px;font-size:10px}
   .comparison-label-before{left:16px}
   .comparison-label-after{right:16px}
