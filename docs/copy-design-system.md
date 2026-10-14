@@ -21,7 +21,7 @@ Revisión del 13 de octubre de 2026. Especificación del prototipo local para su
 | 1 | Portada | H1: Tienes la pasión. Aprende la técnica. | Pasión, técnica y práctica. Encontrar carrera o probar una clase gratis. |
 | 2 | Carreras | H2: Encuentra tu especialidad. | Siete opciones con duración y enlace individual. |
 | 3 | Seicento × Beauty Creations | H2: Silky Pro Palette. | Silky: 120 imágenes ligadas al scroll y cinco bloques de características. |
-| 4 | Educación continua | H2: Sigue sumando técnica. | Especialidades de 48 h, intensivos de 60 h y talleres. |
+| 4 | Educación continua | H2: Siempre hay algo más por crear. | Pestañas Intensivos, Talleres y Especialidades: tres intensivos de 60 h, ocho talleres destacados y 14 especialidades de 48 h, con enlace a la oferta completa. |
 | 5 | Método Seicento 3D3 | H2: Aprende haciendo. | 70 % práctica, 20 % técnica y 10 % fundamentos en carreras profesionales. |
 | 6 | Experiencia Seicento | H2: Herramientas para ir más lejos. | Black Learn, prácticas, portafolio, estudio fotográfico, Makeup Store y masterclasses. |
 | 7 | Pro Beauty | H2: Haz que te encuentren. | Portafolio y servicios a la vista de posibles clientes. |
@@ -34,7 +34,7 @@ Revisión del 13 de octubre de 2026. Especificación del prototipo local para su
 | 14 | Inscripción | H2: Empezar es más sencillo de lo que piensas. | Elegir programa, encontrar grupo y preparar inscripción. |
 | 15 | Noticias | H2: Ideas para tu siguiente paso. | Book, Nancy Tinoco y maquillaje en clima cálido. |
 | 16 | Preguntas frecuentes | H2: Lo que quieres saber. | 16 respuestas sobre programas, experiencia e inscripción. |
-| 17 | Contacto | H2: Haz espacio para tu talento. | Asesoría para elegir carrera y próximo grupo. |
+| 17 | Contacto | H2: Empieza con una conversación. | Formulario de información o visita guiada que prepara una consulta para enviarla por WhatsApp. |
 
 Hay **un H1 y 16 H2 en 17 secciones**. Los programas, módulos y temas de FAQ usan H3. La introducción del bento es H3 y sus cinco beneficios son H4. En Framer configura la etiqueta HTML por separado del tamaño visual. **Método Seicento 3D3** es el nombre de la metodología académica de la escuela.
 
@@ -100,6 +100,44 @@ Las fotografías aportadas permiten observar las cinco filas de siete tonos, los
 | Integral + Editorial | 12 meses |
 
 Las tres primeras opciones son tarjetas principales; las otras cuatro aparecen como filas compactas. Cada una enlaza a su ficha oficial.
+
+### Educación continua
+
+**Siempre hay algo más por crear.**
+
+Empieza, profundiza o explora algo nuevo. Encuentra el formato para lo que quieres aprender.
+
+Las tres pestañas conservan los formatos publicados por la escuela:
+
+- **Intensivos:** Principiante, Glam Avanzado y Experto. Cada uno tiene una duración de 60 h y enlaza a su ficha oficial. El título del panel es **Haz tiempo para tu técnica.**
+- **Talleres:** selección de Automaquillaje, Maquillaje de ojos, Novias glam, Colorimetría, Cine UHD beauty, Gráficos full color, Pieles maduras y Caracterización. Cada tarjeta enlaza a una edición oficial; el acceso a la oferta completa conserva la consulta del resto de talleres. No se fija una duración común ni se copian fechas que puedan caducar.
+- **Especialidades:** 14 opciones de 48 h: Efectos especiales; Maquillaje UHD para cine y TV; Maquillaje con aerógrafo; Novias avanzado; Maquillaje moda editorial; Novias; Peinados sociales; Prostéticos de silicón; Ojos; Técnicas avanzadas en piel y correcciones; Alto peinado; Delineados; Caracterización teatral; Aquacolor.
+
+**Me interesa** y los enlaces de especialidad llevan al contacto con el programa preseleccionado. Los campos ya escritos permanecen al cambiar de intención. La pestaña activa se anuncia mediante `aria-selected`; cada panel está asociado a su botón. Flechas izquierda/derecha, Inicio y Fin cambian la pestaña y mueven el foco. Sin JavaScript, se muestran los tres paneles.
+
+### Contacto y visita guiada
+
+**Empieza con una conversación.**
+
+Cuéntanos qué quieres aprender. Te orientamos con el programa, el campus y el próximo inicio.
+
+| Campo | Comportamiento |
+| --- | --- |
+| Intención | Quiero información / Quiero visitar el campus |
+| Nombre | Obligatorio, al menos dos caracteres después de quitar espacios exteriores |
+| Teléfono | Obligatorio, entre 10 y 15 dígitos; admite lada, espacios, guiones y paréntesis |
+| Correo | Opcional, con validación de formato |
+| Programa | Obligatorio; carreras, intensivos, especialidades, talleres o asesoría para elegir |
+| Campus | Obligatorio; Reforma, Coyoacán, En línea o Quiero orientación. Una visita requiere campus físico |
+| Día y hora | Sólo para visitas. Horarios de CDMX: L–V 09:00–18:00, fines de semana 09:00–16:00; excluye fechas y horas ya pasadas |
+| Mensaje | Opcional, hasta 1,000 caracteres |
+| Privacidad | Casilla obligatoria con enlace al aviso oficial |
+
+CTA inicial: **Preparar mi consulta**. El resultado muestra **Tu consulta está lista**, permite revisar el mensaje y aclara que aún no se ha enviado. CTA final: **Continuar en WhatsApp**. El visitante decide el envío dentro de WhatsApp; una visita propuesta queda sujeta a confirmación de admisiones.
+
+La demo no hace un envío automático ni almacena datos en el navegador o en un servidor. La vista previa usa texto plano y el enlace de WhatsApp codifica el mensaje. Al editar cualquier campo se oculta el resultado anterior para evitar continuar con datos desactualizados. Sin JavaScript, se ofrecen el WhatsApp y el formulario oficial.
+
+**Implementación:** [admissions.css](../admissions.css) y [assets/admissions.js](../assets/admissions.js). Al migrar a Framer, recrea los controles y sus etiquetas y conecta el formulario mediante su integración nativa a un destino real de recepción si quieres envío directo desde la página. La demo no contiene backend; los tokens temporales de Divi/WordPress del sitio oficial no deben copiarse como integración de recepción.
 
 ## Preguntas frecuentes · Copy completo
 
@@ -241,7 +279,8 @@ La demo conserva `noindex, nofollow` e identificación de vista previa. Esta esp
 
 - [AirPods Pro de Apple](https://www.apple.com/mx/airpods-pro/): referencia de presentación y organización de beneficios. El copy de Seicento se escribe para sus estudiantes y su producto.
 - [Portada oficial](https://seicento.edu.mx/): más de 20 mil egresados, clase muestra, masterclasses, comunidad y logos. [Logo Beauty Creations](https://seicento.edu.mx/wp-content/uploads/2026/02/Beauty-Creations-2.png).
-- [Oferta educativa](https://seicento.edu.mx/carreras/) y fichas individuales: programas, duraciones y formatos. La demo enlaza desde cada opción a su ficha.
+- [Oferta educativa](https://seicento.edu.mx/carreras/) y fichas individuales: programas, duraciones y formatos. Carreras, intensivos y talleres enlazan a fichas oficiales; las especialidades preseleccionan una consulta con admisiones. Educación continua conserva un enlace a la oferta completa.
+- [Contacto oficial](https://seicento.edu.mx/contacto/) y [aviso de privacidad](https://seicento.edu.mx/aviso-de-privacidad/): campos de contacto y visita guiada, campus, horarios de visita y número oficial de WhatsApp. El correo opcional y la selección de programa se añaden para orientar la consulta del rediseño.
 - [Carrera Integral](https://seicento.edu.mx/producto/carrera-integral-12-meses/): ingreso sin experiencia, kit gradual y opciones de pago. [Ficha 2026](https://seicento.edu.mx/wp-content/uploads/2026/02/CARRERA-Integral-12meses-288h-Vespertino.pdf): Black Learn puede tener costo adicional.
 - [Método 3D3](https://seicento.edu.mx/metodo-3d3/): distribución 70/20/10 de las carreras profesionales.
 - [Experiencia Seicento](https://seicento.edu.mx/porque-estudiar-en-seicento/) y [Pro Beauty](https://seicento.edu.mx/plataforma_probeauty/): recursos del alumno y visibilidad profesional, con condiciones por programa.

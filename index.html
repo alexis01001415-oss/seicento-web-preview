@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css?v=20261013.5" />
+    <link rel="stylesheet" href="assets/admissions.css?v=20261013.1" />
     <noscript><style>.scroll-story{height:auto}.scroll-stage{position:relative;top:auto;height:65vh}.scroll-intro,.scroll-hint,.scroll-caption,.scroll-track{display:none}</style></noscript>
   </head>
   <body>
@@ -29,9 +30,9 @@
           <a href="#carreras">Carreras</a>
           <a href="#silky">Colaboración</a>
           <a href="#metodo">La experiencia</a>
-          <a href="#respaldo">Respaldo</a>
+          <a href="#educacion-continua">Educación continua</a>
           <a href="#campus">Campus</a>
-          <a class="nav-cta" href="https://seicento.edu.mx/contacto/">Quiero estudiar</a>
+          <a class="nav-cta" href="#contacto">Quiero estudiar</a>
         </nav>
         <details class="mobile-menu">
           <summary>Menú</summary>
@@ -39,9 +40,9 @@
             <a href="#carreras">Carreras</a>
             <a href="#silky">Seicento × Beauty Creations</a>
             <a href="#metodo">La experiencia</a>
-            <a href="#respaldo">Respaldo</a>
+            <a href="#educacion-continua">Educación continua</a>
             <a href="#campus">Campus</a>
-            <a href="https://seicento.edu.mx/contacto/">Solicitar información</a>
+            <a href="#contacto">Solicitar información</a>
           </nav>
         </details>
       </div>
@@ -170,33 +171,67 @@
       <section id="educacion-continua" class="section continuing" aria-labelledby="continua-title">
         <div class="container">
           <div class="continuing-intro">
-            <div>
-              <p class="eyebrow">Educación continua</p>
-              <h2 id="continua-title">Sigue sumando técnica.</h2>
+            <div><p class="eyebrow">Educación continua</p><h2 id="continua-title">Siempre hay algo<br />más por crear.</h2></div>
+            <p class="intro">Empieza, profundiza o explora algo nuevo. Encuentra el formato para lo que quieres aprender.</p>
+          </div>
+          <div class="course-tabs" role="tablist" aria-label="Modalidades de educación continua" hidden>
+            <button type="button" role="tab" id="tab-intensivos" aria-controls="panel-intensivos" aria-selected="true" data-course-tab>Intensivos</button>
+            <button type="button" role="tab" id="tab-talleres" aria-controls="panel-talleres" aria-selected="false" tabindex="-1" data-course-tab>Talleres</button>
+            <button type="button" role="tab" id="tab-especialidades" aria-controls="panel-especialidades" aria-selected="false" tabindex="-1" data-course-tab>Especialidades</button>
+          </div>
+          <div class="course-panel" id="panel-intensivos" role="tabpanel" aria-labelledby="tab-intensivos" tabindex="0" data-course-panel>
+            <div class="course-panel-head"><div><h3>Haz tiempo para tu técnica.</h3><p>Tres intensivos de maquillaje social. Elige el que quieres conocer y consulta con admisiones cuál se ajusta a ti.</p></div><div class="course-meta"><strong>60 h</strong><span>por intensivo</span></div></div>
+            <div class="intensive-grid">
+              <article class="intensive-card">
+                <span class="course-index">01 / Maquillaje social · 60 horas</span>
+                <h4>Principiante</h4><p>Dale una base a tu pasión. Dedica tiempo a conocer y practicar el maquillaje social.</p>
+                <div class="course-links"><a class="text-link" href="#contacto" data-course="Intensivo Principiante">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/intensivo-principiante-reforma/">Ver programa</a></div>
+              </article>
+              <article class="intensive-card">
+                <span class="course-index">02 / Maquillaje social · 60 horas</span>
+                <h4>Glam Avanzado</h4><p>Lleva tu interés por el glam a una nueva etapa de práctica en maquillaje social.</p>
+                <div class="course-links"><a class="text-link" href="#contacto" data-course="Intensivo Glam Avanzado">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/intensivo-avanzado-reforma/">Ver programa</a></div>
+              </article>
+              <article class="intensive-card">
+                <span class="course-index">03 / Maquillaje social · 60 horas</span>
+                <h4>Experto</h4><p>Sigue explorando el maquillaje social con un formato concentrado en 60 horas.</p>
+                <div class="course-links"><a class="text-link" href="#contacto" data-course="Intensivo Experto">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/intensivo-experto-reforma/">Ver programa</a></div>
+              </article>
             </div>
-            <p class="intro">Un área nueva. Una técnica pendiente. Un formato para cada momento de tu formación.</p>
           </div>
-          <div class="continuing-grid">
-            <article class="continuing-card">
-              <span>01 / Especialidades de 48 horas</span>
-              <h3>Especialidades</h3>
-              <p>Profundiza en novias, moda editorial, cine y TV, aerógrafo, efectos especiales o peinados. Dale una nueva dirección a tu trabajo.</p>
-              <a class="text-link" href="https://seicento.edu.mx/carreras/">Explorar especialidades</a>
-            </article>
-            <article class="continuing-card">
-              <span>02 / Intensivos de 60 horas</span>
-              <h3>Intensivos</h3>
-              <p>Empieza con Principiante o continúa con Glam Avanzado y Experto. Formación concentrada para practicar según tu nivel.</p>
-              <a class="text-link" href="https://seicento.edu.mx/carreras/">Explorar intensivos</a>
-            </article>
-            <article class="continuing-card">
-              <span>03 / Aprende una técnica</span>
-              <h3>Talleres</h3>
-              <p>Automaquillaje, ojos y colorimetría, entre otros temas. Aprende algo concreto que puedas sumar a tu próxima práctica.</p>
-              <a class="text-link" href="https://seicento.edu.mx/carreras/">Explorar talleres</a>
-            </article>
+          <div class="course-panel" id="panel-talleres" role="tabpanel" aria-labelledby="tab-talleres" tabindex="0" data-course-panel>
+            <div class="course-panel-head"><div><h3>Una técnica nueva.<br />Más posibilidades.</h3><p>Automaquillaje, color, novias o caracterización. Descubre una selección de talleres y encuentra tu siguiente tema.</p></div><div class="course-meta"><strong>A tu elección</strong><span>duración según taller</span></div></div>
+            <div class="workshop-grid">
+              <article class="workshop-card"><span>Para ti</span><h4>Automaquillaje</h4><p>Dedica una sesión a tu propia forma de maquillarte.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Automaquillaje">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-automaquillaje-7-de-noviembre-campus-reforma/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>La mirada</span><h4>Maquillaje de ojos</h4><p>Haz de los ojos el centro de tu próxima práctica.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Maquillaje de ojos">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-en-maquillaje-de-ojos-coyoacan-21-octubre/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>Ocasiones especiales</span><h4>Novias glam</h4><p>Explora el maquillaje de novias desde el estilo glam.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Novias glam">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-maquillaje-novias-glam-3-de-noviembre-campus-reforma/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>El color</span><h4>Colorimetría</h4><p>Amplía tu mirada sobre el color y sus combinaciones.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Colorimetría">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-maquillaje-experto-en-colorimetria-6-de-noviembre-campus-reforma/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>Frente a cámara</span><h4>Cine UHD beauty</h4><p>Acércate al maquillaje beauty para cine UHD.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Cine UHD beauty">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-cine-uhd-beauty-reforma-28-octubre/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>Expresión creativa</span><h4>Gráficos full color</h4><p>Dale espacio a las líneas, las formas y el color.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Gráficos full color">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-graficos-full-color-8-de-noviembre-campus-reforma/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>Piel y técnica</span><h4>Pieles maduras</h4><p>Centra tu práctica en el maquillaje de pieles maduras.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Pieles maduras">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-perfeccionamiento-de-maquillaje-pieles-maduras-8-de-noviembre-campus-coyoacan/">Ver próxima edición</a></div></article>
+              <article class="workshop-card"><span>Otros personajes</span><h4>Caracterización</h4><p>Explora la transformación a través del maquillaje.</p><div class="course-links"><a class="text-link" href="#contacto" data-course="Taller: Caracterización">Me interesa</a><a class="course-details-link" href="https://seicento.edu.mx/producto/taller-maquillaje-caracterizacion-grinch-14-de-noviembre-campus-coyoacan/">Ver próxima edición</a></div></article>
+            </div>
           </div>
-          <p class="small-note">Encuentra grupos y fechas en el <a href="https://seicento.edu.mx/calendario/">calendario de Seicento</a>.</p>
+          <div class="course-panel" id="panel-especialidades" role="tabpanel" aria-labelledby="tab-especialidades" tabindex="0" data-course-panel>
+            <div class="course-panel-head"><div><h3>Encuentra tu especialidad.</h3><p>Elige un área y dale un lugar propio en tu formación. De novias a efectos especiales, explora las 14 opciones.</p></div><div class="course-meta"><strong>48 h</strong><span>por especialidad</span></div></div>
+            <div class="specialty-grid">
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Efectos especiales" aria-label="Pedir información de la especialidad en Efectos especiales"><h4>Efectos especiales</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Maquillaje UHD para cine y TV" aria-label="Pedir información de la especialidad en Maquillaje UHD para cine y TV"><h4>Maquillaje UHD para cine y TV</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Maquillaje con aerógrafo" aria-label="Pedir información de la especialidad en Maquillaje con aerógrafo"><h4>Maquillaje con aerógrafo</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Novias avanzado" aria-label="Pedir información de la especialidad en Novias avanzado"><h4>Novias avanzado</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Maquillaje moda editorial" aria-label="Pedir información de la especialidad en Maquillaje moda editorial"><h4>Maquillaje moda editorial</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Novias" aria-label="Pedir información de la especialidad en Novias"><h4>Novias</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Peinados sociales" aria-label="Pedir información de la especialidad en Peinados sociales"><h4>Peinados sociales</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Prostéticos de silicón" aria-label="Pedir información de la especialidad en Prostéticos de silicón"><h4>Prostéticos de silicón</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Ojos" aria-label="Pedir información de la especialidad en Ojos"><h4>Ojos</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Técnicas avanzadas en piel y correcciones" aria-label="Pedir información de la especialidad en Técnicas avanzadas en piel y correcciones"><h4>Técnicas avanzadas en piel y correcciones</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Alto peinado" aria-label="Pedir información de la especialidad en Alto peinado"><h4>Alto peinado</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Delineados" aria-label="Pedir información de la especialidad en Delineados"><h4>Delineados</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Caracterización teatral" aria-label="Pedir información de la especialidad en Caracterización teatral"><h4>Caracterización teatral</h4><span aria-hidden="true">↗</span></a>
+              <a class="specialty-link" href="#contacto" data-course="Especialidad: Aquacolor" aria-label="Pedir información de la especialidad en Aquacolor"><h4>Aquacolor</h4><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="course-footer"><p>Los grupos, las fechas y el campus dependen del programa. Consulta la oferta completa y sus próximas ediciones.</p><a class="text-link" href="https://seicento.edu.mx/carreras/">Ver oferta y próximos inicios</a></div>
         </div>
       </section>
 
@@ -326,7 +361,7 @@
               <div class="campus-links"><a class="text-link" href="https://seicento.edu.mx/campus/">Conocer el campus</a><a class="text-link" href="https://www.youtube.com/watch?v=MoSassjH4Yo">Ver recorrido</a></div>
             </div>
           </div>
-          <div class="campus-visit"><p>¿Quieres conocer el espacio antes de elegir tu programa?</p><a class="text-link" href="https://seicento.edu.mx/contacto/">Agenda una visita</a></div>
+          <div class="campus-visit"><p>¿Quieres conocer el espacio antes de elegir tu programa?</p><a class="text-link" href="#contacto" data-visit>Agenda una visita</a></div>
         </div>
       </section>
 
@@ -389,7 +424,7 @@ Tu próxima decisión.</h2>
             <p class="eyebrow">Antes de empezar</p>
             <h2 id="preguntas-title">Lo que quieres saber.</h2>
             <p>Lo que necesitas saber para elegir tu programa y preparar tu primer día.</p>
-            <a class="text-link" href="https://seicento.edu.mx/contacto/">Hablar con admisiones</a>
+            <a class="text-link" href="#contacto">Hablar con admisiones</a>
           </div>
           <div class="faq-list">
             <h3 class="faq-topic">01 / Encuentra tu programa</h3>
@@ -463,15 +498,48 @@ Tu próxima decisión.</h2>
         </div>
       </section>
 
-      <section class="last-call" aria-labelledby="contacto-title">
-        <div class="container">
-          <p class="eyebrow">Tu siguiente paso</p>
-          <h2 id="contacto-title">Haz espacio para tu talento.</h2>
-          <p>Elige lo que quieres aprender. Nosotros te ayudamos con la carrera, el campus y el próximo inicio.</p>
-          <div class="last-call-actions">
-            <a class="button" href="https://seicento.edu.mx/contacto/">Solicitar información</a>
-            <a class="text-link" href="https://wa.me/525657907961">Hablar por WhatsApp</a>
+      <section id="contacto" class="contact" aria-labelledby="contacto-title">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Hablemos de tu siguiente paso</p>
+            <h2 id="contacto-title">Empieza con<br />una conversación.</h2>
+            <p class="contact-lead">Cuéntanos qué quieres aprender. Te orientamos con el programa, el campus y el próximo inicio.</p>
+            <ol class="contact-path"><li>Elige lo que te interesa.</li><li>Comparte tus dudas con admisiones.</li><li>Encuentra tu lugar en Seicento.</li></ol>
+            <div class="contact-direct"><p>¿Prefieres hablar directamente?</p><a class="text-link" href="https://wa.me/525657907961">WhatsApp · 56 5790 7961</a></div>
           </div>
+          <form id="admissions-form" class="contact-form" aria-label="Contacto con admisiones" novalidate>
+            <fieldset>
+              <legend>¿Cómo podemos ayudarte?</legend>
+              <div class="contact-intent"><label><input type="radio" name="intent" value="Información" checked /><span>Quiero información</span></label><label><input type="radio" name="intent" value="Visita guiada" /><span>Quiero visitar el campus</span></label></div>
+            </fieldset>
+            <div class="form-grid">
+              <div class="form-field form-field-wide"><label for="contact-name">Tu nombre</label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" minlength="2" maxlength="100" required /></div>
+              <div class="form-field"><label for="contact-phone">Teléfono</label><input id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Con lada" maxlength="24" required /></div>
+              <div class="form-field"><label for="contact-email">Correo <span>· opcional</span></label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" maxlength="120" /></div>
+              <div class="form-field form-field-wide"><label for="contact-program">¿Qué te gustaría estudiar?</label><select id="contact-program" name="program" required><option value="" disabled selected>Elige una opción</option><option>Aún no lo sé, quiero orientación</option>
+                      <optgroup label="Carreras"><option>Pro Master · 14 meses</option><option>Integral · 12 meses</option><option>Integral + FX · 12 meses</option><option>Integral + Editorial · 12 meses</option><option>Social y Novias · 9 meses</option><option>Social y Novias · 12 meses</option><option>Maquillaje Social · 6 meses</option></optgroup>
+                      <optgroup label="Intensivos"><option>Intensivo Principiante</option><option>Intensivo Glam Avanzado</option><option>Intensivo Experto</option></optgroup>
+                      <optgroup label="Especialidades"><option>Especialidad: Efectos especiales</option><option>Especialidad: Maquillaje UHD para cine y TV</option><option>Especialidad: Maquillaje con aerógrafo</option><option>Especialidad: Novias avanzado</option><option>Especialidad: Maquillaje moda editorial</option><option>Especialidad: Novias</option><option>Especialidad: Peinados sociales</option><option>Especialidad: Prostéticos de silicón</option><option>Especialidad: Ojos</option><option>Especialidad: Técnicas avanzadas en piel y correcciones</option><option>Especialidad: Alto peinado</option><option>Especialidad: Delineados</option><option>Especialidad: Caracterización teatral</option><option>Especialidad: Aquacolor</option></optgroup>
+                      <optgroup label="Talleres"><option>Taller: Automaquillaje</option><option>Taller: Maquillaje de ojos</option><option>Taller: Novias glam</option><option>Taller: Colorimetría</option><option>Taller: Cine UHD beauty</option><option>Taller: Gráficos full color</option><option>Taller: Pieles maduras</option><option>Taller: Caracterización</option></optgroup>
+              </select></div>
+              <div class="form-field form-field-wide"><label for="contact-campus">Campus de tu interés</label><select id="contact-campus" name="campus" required><option value="" disabled selected>Elige un campus</option><option>Reforma</option><option>Coyoacán</option><option>En línea</option><option>Quiero orientación</option></select><p class="field-help">La oferta en línea depende del programa.</p></div>
+              <fieldset id="visit-fields" class="visit-fields" hidden>
+                <legend>Propón tu visita</legend>
+                <div class="form-grid"><div class="form-field"><label for="visit-date">Día</label><input id="visit-date" name="visit_date" type="date" disabled /></div><div class="form-field"><label for="visit-time">Hora · CDMX</label><select id="visit-time" name="visit_time" disabled><option value="" disabled selected>Elige un horario</option><option value="09:00">09:00 h</option><option value="09:30">09:30 h</option><option value="10:00">10:00 h</option><option value="10:30">10:30 h</option><option value="11:00">11:00 h</option><option value="11:30">11:30 h</option><option value="12:00">12:00 h</option><option value="12:30">12:30 h</option><option value="13:00">13:00 h</option><option value="13:30">13:30 h</option><option value="14:00">14:00 h</option><option value="14:30">14:30 h</option><option value="15:00">15:00 h</option><option value="15:30">15:30 h</option><option value="16:00">16:00 h</option><option value="16:30">16:30 h</option><option value="17:00">17:00 h</option><option value="17:30">17:30 h</option><option value="18:00">18:00 h</option></select></div></div>
+                <p class="field-help">Lunes a viernes de 9:00 a 18:00 h. Fines de semana de 9:00 a 16:00 h. Admisiones confirmará la disponibilidad de tu visita.</p>
+              </fieldset>
+              <div class="form-field form-field-wide"><label for="contact-message">¿Qué te gustaría saber? <span>· opcional</span></label><textarea id="contact-message" name="message" rows="3" maxlength="1000" placeholder="Cuéntanos tus dudas sobre horarios, programas o inscripciones."></textarea></div>
+            </div>
+            <label class="privacy-check"><input type="checkbox" name="privacy" required /><span>He leído el <a href="https://seicento.edu.mx/aviso-de-privacidad/" target="_blank" rel="noopener noreferrer">aviso de privacidad</a> y deseo compartir mis datos con Seicento para recibir información.</span></label>
+            <button class="button" id="contact-submit" type="submit" disabled>Preparar mi consulta <span aria-hidden="true">&nbsp;↗</span></button>
+            <p class="contact-route">Podrás revisar tu consulta y enviarla a admisiones por WhatsApp.</p>
+            <noscript><p class="field-help">Para contactarnos, <a href="https://wa.me/525657907961">abre el WhatsApp de Seicento</a> o utiliza el <a href="https://seicento.edu.mx/contacto/">formulario del sitio oficial</a>.</p></noscript>
+            <div id="contact-result" class="contact-result" tabindex="-1" hidden>
+              <h3>Tu consulta está lista.</h3><p>Aún no se ha enviado. Continúa en WhatsApp y envía el mensaje a admisiones.</p>
+              <details><summary>Revisar mi consulta</summary><p id="contact-draft" class="contact-draft"></p></details>
+              <a id="contact-whatsapp" class="button" href="https://wa.me/525657907961" target="_blank" rel="noopener noreferrer">Continuar en WhatsApp ↗</a>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -499,7 +567,7 @@ Tu próxima decisión.</h2>
           <nav class="footer-links" aria-label="Campus">
             <a href="https://seicento.edu.mx/campus/">Reforma</a>
             <a href="https://seicento.edu.mx/campus/">Coyoacán</a>
-            <a href="https://seicento.edu.mx/contacto/">Agenda una visita</a>
+            <a href="#contacto" data-visit>Agenda una visita</a>
             <a href="#clase-muestra">Clase muestra gratuita</a>
             <a href="https://seicento.edu.mx/calendario/">Próximos inicios</a>
           </nav>
@@ -508,7 +576,7 @@ Tu próxima decisión.</h2>
           <p class="footer-heading">Contacto</p>
           <nav class="footer-links" aria-label="Contacto">
             <a href="https://wa.me/525657907961">WhatsApp: 56 5790 7961</a>
-            <a href="https://seicento.edu.mx/contacto/">Solicitar información</a>
+            <a href="#contacto">Solicitar información</a>
             <a href="#preguntas">Preguntas frecuentes</a>
             <a href="https://seicento.servoescolar.mx">Acceso Black Learn</a>
             <a href="https://seicento.edu.mx/aviso-de-privacidad/">Aviso de privacidad</a>
@@ -519,6 +587,7 @@ Tu próxima decisión.</h2>
       <div class="container footer-bottom"><span>Seicento Makeup School · Ciudad de México</span><span>Propuesta de rediseño · Vista previa</span></div>
     </footer>
     <script src="assets/site.js" defer></script>
+    <script src="assets/admissions.js?v=20261013.1" defer></script>
     <script src="assets/scroll-sequence.js" defer></script>
   </body>
 </html>

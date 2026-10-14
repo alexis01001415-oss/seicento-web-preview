@@ -1,0 +1,79 @@
+/* Education selector and admissions form. */
+.continuing .eyebrow{color:#c2a9b7}
+.course-tabs{display:flex;gap:6px;width:fit-content;max-width:100%;padding:6px;margin-bottom:32px;background:#252529;border:1px solid #35353c;border-radius:50px}
+.course-tabs button{border:0;background:transparent;color:#b2b2bd;padding:14px 28px;border-radius:40px;font-size:14px;font-weight:700;line-height:1.3;transition:background .2s,color .2s}
+.course-tabs button:hover{color:#fff}
+.course-tabs button[aria-selected="true"]{background:#f5f5f7;color:#171719;box-shadow:0 3px 12px #0002}
+.course-panel{padding-top:12px;scroll-margin-top:100px}
+.course-tabs[hidden] ~ .course-panel + .course-panel{margin-top:60px}
+.course-panel:focus-visible{outline:2px solid var(--accent);outline-offset:10px;border-radius:10px}
+.course-panel-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin:0 0 32px}
+.course-panel-head h3{font-size:36px;max-width:620px;letter-spacing:-.04em;margin-bottom:12px}
+.course-panel-head p{color:#a4a4af;font-size:15px;max-width:570px}
+.course-meta{flex:none;display:flex;flex-direction:column;gap:3px;text-align:right;color:#a4a4af;font-size:12px}
+.course-meta strong{color:#f4b7cf;font-size:30px;letter-spacing:-.04em;font-weight:600}
+.intensive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.intensive-card{display:flex;flex-direction:column;min-height:350px;padding:32px;border-radius:26px;background:#202024}
+.intensive-card:nth-child(2){background:#29232c}.intensive-card:nth-child(3){background:#282836}
+.course-index{font-size:12px;color:#bfa4b4;letter-spacing:.03em}
+.intensive-card h4{font-size:34px;letter-spacing:-.05em;line-height:1.1;margin:38px 0 18px}
+.intensive-card p{font-size:14px;line-height:1.6;color:#b8b5c1;margin:0 0 30px}
+.course-links{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:auto}
+.course-links .text-link{font-size:12px;padding-block:8px}
+.course-details-link{color:#b5b2c0;font-size:11px;text-underline-offset:4px;line-height:1.4}
+.specialty-grid{display:grid;grid-template-columns:1fr 1fr;column-gap:42px;padding-top:4px}
+.specialty-link{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:80px;border-bottom:1px solid #35353c;padding:20px 0;text-decoration:none}
+.specialty-link h4{font-size:17px;line-height:1.4;letter-spacing:-.015em;font-weight:600;margin:0}
+.specialty-link span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#29292f;color:#c2a9b7;flex:none;transition:background .2s,color .2s}
+.specialty-link:hover h4{text-decoration:underline;text-underline-offset:5px}.specialty-link:hover span{background:#f4b7cf;color:#171719}
+.workshop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.workshop-card{display:flex;flex-direction:column;align-items:start;background:#202024;padding:26px 30px;border-radius:22px;min-height:195px}
+.workshop-card>span{font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#bfa4b4}
+.workshop-card h4{font-size:23px;line-height:1.2;letter-spacing:-.035em;margin:16px 0 12px}
+.workshop-card p{color:#b8b5c1;font-size:13px;margin-bottom:18px;max-width:420px}
+.workshop-card .course-links{width:100%}
+.course-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:30px;padding-top:24px;border-top:1px solid #35353c}
+.course-footer p{color:#a4a4af;font-size:12px;max-width:630px}
+.course-footer .text-link{font-size:12px;flex:none}
+.contact{background:#121214;padding:120px 0;color:#f5f5f7}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:75px;align-items:start}
+.contact-copy{position:sticky;top:115px;padding-top:18px}
+.contact-copy .eyebrow{color:#c2a9b7}
+.contact-copy h2{font-size:clamp(38px,4.7vw,64px);max-width:480px}
+.contact-lead{font-size:17px;color:#a4a4af;margin-top:24px;max-width:380px}
+.contact-path{display:grid;gap:24px;padding:0;margin:44px 0;list-style:none;counter-reset:steps}
+.contact-path li{display:flex;gap:16px;font-size:13px;align-items:center;color:#c4c4cd;counter-increment:steps}
+.contact-path li::before{content:'0' counter(steps);font-size:11px;color:#c2a9b7;display:grid;place-items:center;width:34px;height:34px;border:1px solid #3b353d;border-radius:50%;flex:none}
+.contact-direct{padding-top:26px;border-top:1px solid #333338;max-width:360px}
+.contact-direct p{font-size:12px;color:#a4a4af}.contact-direct a{font-size:14px;color:#f4b7cf}
+.contact-form{background:#f5f5f7;color:#1d1d1f;color-scheme:light;padding:36px;border-radius:30px;min-width:0}
+.contact-form fieldset{border:0;padding:0;margin:0;min-width:0}
+.contact-form legend{font-size:12px;font-weight:700;margin-bottom:12px}
+.contact-intent{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;background:#e7e7ec;border-radius:50px;margin-bottom:26px}
+.contact-intent label{position:relative;cursor:pointer;text-align:center}
+.contact-intent input{position:absolute;opacity:0;width:1px;height:1px}
+.contact-intent span{display:block;padding:12px 8px;border-radius:40px;font-size:12px;font-weight:700}
+.contact-intent input:checked+span{background:#fff;box-shadow:0 2px 8px #0001}
+.contact-intent input:focus-visible+span{outline:3px solid #9d5077;outline-offset:2px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px}
+.form-field{display:flex;flex-direction:column;gap:8px;min-width:0}.form-field-wide{grid-column:1/-1}
+.form-field label{font-size:12px;font-weight:700;line-height:1.4}.form-field label span{color:#777781;font-weight:500;font-size:10px}
+.form-field input,.form-field select,.form-field textarea{width:100%;min-width:0;min-height:49px;border:1px solid #d3d3db;border-radius:11px;background:#fff;color:#1d1d1f;font:inherit;font-size:14px;padding:12px;line-height:1.4}
+.form-field textarea{min-height:106px;resize:vertical}.form-field input::placeholder,.form-field textarea::placeholder{color:#85858e}
+.form-field input:focus-visible,.form-field select:focus-visible,.form-field textarea:focus-visible{outline:3px solid #bc7a9b55;border-color:#975273;outline-offset:1px}
+.field-help{font-size:11px;color:#696973;line-height:1.5;margin:0}
+.visit-fields{grid-column:1/-1!important;margin:0!important;padding:20px 0 4px!important;border-top:1px solid #dadade!important}
+.visit-fields legend{padding-top:12px!important}.visit-fields>.field-help{margin-top:13px}
+.privacy-check{display:flex;align-items:start;gap:10px;font-size:11px;line-height:1.6;margin:24px 0 20px;color:#61616c;cursor:pointer}
+.privacy-check input{width:17px;height:17px;flex:none;margin:1px 0 0;accent-color:#914d70}.privacy-check a{text-underline-offset:3px}
+.contact-form .button{width:100%;background:#222226;color:#fff;min-height:50px}.contact-form .button:hover{background:#37373e}.contact-form .button:disabled{opacity:.5;cursor:default}
+.contact-route{font-size:11px;color:#696973;text-align:center;line-height:1.5;margin-top:13px}
+.contact-result{margin-top:24px;border:1px solid #cdc1ca;padding:22px;border-radius:18px;background:#fff;scroll-margin-top:100px}
+.contact-result:focus{outline:2px solid #aa688b;outline-offset:4px}
+.contact-result h3{font-size:23px;margin-bottom:10px}.contact-result>p{font-size:12px;color:#62626c;margin-bottom:14px}
+.contact-result details{margin:14px 0 20px;font-size:12px}.contact-result summary{cursor:pointer;font-weight:600}
+.contact-draft{white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f5f7;border-radius:10px;padding:14px;font-size:11px;line-height:1.6;margin-top:12px;color:#52525e}
+@media(max-width:1000px){.contact-grid{gap:40px;grid-template-columns:.8fr 1.2fr}.contact-form{padding:28px}.intensive-card{padding:25px}.intensive-card h4{font-size:29px}.course-panel-head h3{font-size:32px}.specialty-grid{column-gap:28px}}
+@media(max-width:760px){.course-tabs{width:100%;gap:3px}.course-tabs button{flex:1;padding:13px 8px;font-size:12px}.course-panel-head{align-items:start;gap:24px}.course-panel-head h3{font-size:29px}.course-panel-head p{font-size:14px}.course-meta{font-size:10px}.course-meta strong{font-size:25px}.intensive-grid{grid-template-columns:1fr}.intensive-card{min-height:0;padding:28px}.intensive-card h4{margin-top:24px;font-size:35px}.intensive-card p{max-width:440px;margin-bottom:20px}.specialty-grid{grid-template-columns:1fr}.specialty-link{min-height:72px}.workshop-grid{grid-template-columns:1fr}.workshop-card{min-height:0;padding:26px}.course-footer{align-items:start;flex-direction:column;gap:10px}.contact{padding:80px 0}.contact-grid{grid-template-columns:1fr;gap:40px}.contact-copy{position:static;padding:0}.contact-copy h2{font-size:48px;max-width:540px}.contact-lead{max-width:510px}.contact-path{margin:28px 0;gap:14px}.contact-direct{max-width:none}.contact-form{padding:30px}.contact-copy .eyebrow{margin-bottom:16px}}
+@media(max-width:480px){.course-panel-head{flex-direction:column;gap:14px}.course-meta{flex-direction:row;gap:10px;align-items:baseline}.course-meta strong{font-size:22px}.course-panel-head h3{font-size:28px}.course-tabs button{font-size:11px;padding:13px 4px}.specialty-link h4{font-size:16px}.contact-copy h2{font-size:43px}.contact-form{padding:24px;border-radius:24px}.form-grid{grid-template-columns:1fr;gap:18px}.form-field input,.form-field select,.form-field textarea{font-size:16px}.contact-intent span{font-size:11px}.contact-result{padding:18px}.contact-path li{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.course-tabs button,.specialty-link span{transition:none}}

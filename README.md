@@ -12,11 +12,23 @@ La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 17 se
 | --- | --- |
 | [`index.html`](index.html) | Copy, jerarquía, enlaces, secciones y estructura del bento |
 | [`styles.css`](styles.css) | Colores, tipografía, composición y adaptación a móvil |
+| [`admissions.css`](admissions.css) | Pestañas de educación continua y formulario de admisiones |
+| [`assets/admissions.js`](assets/admissions.js) | Navegación de pestañas, selección de programa y preparación de la consulta |
 | [`assets/scroll-sequence.js`](assets/scroll-sequence.js) | Carga de imágenes, canvas, progreso y transiciones de texto |
 | [`docs/copy-design-system.md`](docs/copy-design-system.md) | Copy y especificación para construir en Framer |
 | [`framer/ImageSequenceScrub.tsx`](framer/ImageSequenceScrub.tsx) | Componente reutilizable para Framer; instalación en su [guía](framer/README.md) |
 
 No hay proceso de compilación ni dependencias de aplicación. Para revisar el sitio, sirve la carpeta con un servidor HTTP estático, por ejemplo `python -m http.server 8000`, o utiliza la demo publicada del proyecto.
+
+## Educación continua y contacto
+
+La sección presenta tres pestañas: **Intensivos, Talleres y Especialidades**. Incluye los tres intensivos de 60 h, las 14 especialidades de 48 h y una selección de ocho talleres, además del acceso a la oferta completa. Las pestañas se controlan con clic, flechas izquierda/derecha, Inicio y Fin. Sin JavaScript, los tres contenidos siguen disponibles.
+
+Los enlaces **Me interesa** preseleccionan el programa en el formulario. El contacto ofrece dos intenciones: **Información** y **Visita guiada**. Solicita nombre, teléfono, programa, campus y lectura del aviso de privacidad; el correo y el mensaje son opcionales. Para las visitas añade fecha y hora, restringe la elección a los campus físicos y comprueba horarios de CDMX: lunes a viernes de 09:00 a 18:00 h, fines de semana de 09:00 a 16:00 h. La visita queda sujeta a confirmación de admisiones.
+
+**Preparar mi consulta** valida los campos y muestra el mensaje antes de abrir WhatsApp. La demo no envía automáticamente ni almacena los datos; el visitante confirma el envío en WhatsApp al número oficial de Seicento. Sin JavaScript conserva enlaces a WhatsApp y al formulario oficial.
+
+Al trasladarlo a Framer, construye el formulario con la integración nativa de Forms y configura un destino real de recepción si se desea enviar directamente desde la web. El flujo de esta demo prepara una consulta para WhatsApp; no incluye un backend ni reutiliza los tokens temporales del formulario de WordPress.
 
 ## Silky Pro Palette
 
