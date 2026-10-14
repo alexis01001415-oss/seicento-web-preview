@@ -50,9 +50,9 @@
 .contact-form fieldset{border:0;padding:0;margin:0;min-width:0}
 .contact-form legend{font-size:12px;font-weight:700;margin-bottom:12px}
 .contact-intent{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;background:#e7e7ec;border-radius:50px;margin-bottom:26px}
-.contact-intent label{position:relative;cursor:pointer;text-align:center}
+.contact-intent label{position:relative;cursor:pointer;text-align:center;display:flex;align-items:stretch}
 .contact-intent input{position:absolute;opacity:0;width:1px;height:1px}
-.contact-intent span{display:block;padding:12px 8px;border-radius:40px;font-size:12px;font-weight:700}
+.contact-intent span{display:flex;align-items:center;justify-content:center;width:100%;padding:12px 8px;border-radius:40px;font-size:12px;font-weight:700}
 .contact-intent input:checked+span{background:#fff;box-shadow:0 2px 8px #0001}
 .contact-intent input:focus-visible+span{outline:3px solid #9d5077;outline-offset:2px}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px}
