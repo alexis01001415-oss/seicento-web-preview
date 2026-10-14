@@ -1,0 +1,42 @@
+/* Contact information and institutional directory. */
+.footer-complete{padding:64px 0 0;background:#111113;color:#f5f5f7}
+.footer-complete a{color:inherit;text-decoration:none;text-underline-offset:4px}
+.footer-complete a:hover{text-decoration:underline}
+.footer-complete p{max-width:none;color:#9e9ea8}
+.footer-complete h3{font-size:14px;letter-spacing:0;line-height:1.4;font-weight:700;margin:0 0 18px}
+.footer-masthead{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-bottom:42px;border-bottom:1px solid #303036}
+.footer-complete .footer-brand{width:150px;margin:0 0 15px}
+.footer-identity p{font-size:13px}
+.footer-socials{display:flex;flex-wrap:wrap;gap:12px}
+.footer-socials a{display:inline-flex;align-items:center;gap:9px;min-height:44px;border:1px solid #3b3b42;border-radius:40px;padding:10px 14px;font-size:11px;color:#cdCDD5;transition:border-color .2s,background .2s}
+.footer-socials a:hover{background:#232329;border-color:#858591;text-decoration:none}
+.footer-socials svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.footer-socials .social-icon-dot{fill:currentColor;stroke:none}
+.footer-contact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:54px;padding:40px 0}
+.footer-contact-grid>div{min-width:0}
+.footer-campus-block address{font-style:normal;font-size:13px;line-height:1.75;color:#b5b5bf;margin-bottom:16px}
+.footer-complete .footer-phone{font-size:13px;color:#e6e6ec;white-space:nowrap}
+.footer-phones{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.footer-phones>span{color:#74747e}
+.footer-complete .footer-map{display:flex;align-items:center;gap:8px;width:fit-content;margin-top:15px;min-height:30px;font-size:12px;color:#eeb3cd}
+.footer-whatsapp{display:block;width:fit-content;margin-bottom:20px}
+.footer-whatsapp>span,.footer-email>span{display:block;font-size:11px;line-height:1.6;color:#a8a8b3;margin-bottom:5px}
+.footer-whatsapp strong{font-size:22px;font-weight:600;letter-spacing:-.025em}
+.footer-whatsapp strong span{margin-left:8px;font-size:18px;color:#eeb3cd}
+.footer-email a{font-size:12px;overflow-wrap:anywhere}
+.footer-visit-strip{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:23px 26px;background:#202024;border-radius:16px}
+.footer-visit-strip strong{font-size:13px;font-weight:600}
+.footer-visit-strip p{font-size:11px;margin-top:6px}
+.footer-visit-strip>a{display:inline-flex;gap:10px;align-items:center;flex:none;font-size:12px;color:#eeb3cd;min-height:40px}
+.footer-directory{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:35px;padding:42px 0}
+.footer-directory h3{font-size:12px;margin-bottom:16px}
+.footer-directory-links{display:grid;align-content:start;gap:12px}
+.footer-directory-links a{font-size:11px;color:#aaaab4;line-height:1.5;width:fit-content}
+.footer-directory-links a:hover{color:#f5f5f7}
+.footer-legal{border-top:1px solid #303036;display:flex;align-items:center;flex-wrap:wrap;gap:18px 28px;padding:24px 0 28px}
+.footer-legal p,.footer-legal>span{font-size:10px;color:#9999a4;line-height:1.6}
+.footer-legal nav{display:flex;flex-wrap:wrap;gap:18px;font-size:10px;color:#b9b9c3}
+.footer-legal>span{margin-left:auto;color:#8f8f9c}
+@media(max-width:1000px){.footer-contact-grid{gap:30px}.footer-masthead{gap:24px}.footer-socials{gap:8px}.footer-socials a{padding:10px 11px}.footer-directory{gap:25px}.footer-whatsapp strong{font-size:20px}}
+@media(max-width:760px){.footer-complete{padding-top:45px}.footer-masthead{align-items:flex-start;flex-direction:column;gap:25px;padding-bottom:32px}.footer-contact-grid{grid-template-columns:1fr 1fr;gap:32px 24px;padding:32px 0}.footer-direct-contact{grid-column:1/-1;border-top:1px solid #303036;padding-top:28px;display:grid;grid-template-columns:1fr 1fr;column-gap:24px}.footer-direct-contact h3{grid-column:1/-1;margin-bottom:15px}.footer-direct-contact .footer-whatsapp{margin:0}.footer-direct-contact .footer-map{margin-top:10px}.footer-visit-strip{align-items:flex-start;gap:20px;padding:22px}.footer-directory{grid-template-columns:1fr 1fr;gap:32px 24px;padding:35px 0}.footer-directory-links{gap:13px}.footer-legal{align-items:flex-start;gap:12px;flex-direction:column}.footer-legal>span{margin-left:0}}
+@media(max-width:480px){.footer-socials{display:grid;grid-template-columns:1fr 1fr;width:100%;gap:10px}.footer-socials a{justify-content:center;min-height:46px;font-size:12px}.footer-contact-grid{grid-template-columns:1fr;gap:28px}.footer-campus-block+.footer-campus-block{border-top:1px solid #303036;padding-top:28px}.footer-campus-block address{font-size:14px}.footer-complete .footer-phone{font-size:14px}.footer-direct-contact{display:block;grid-column:auto}.footer-direct-contact .footer-whatsapp{margin-bottom:18px}.footer-email a{font-size:13px}.footer-visit-strip{flex-direction:column;gap:8px}.footer-visit-strip p{font-size:12px;max-width:300px}.footer-directory{gap:32px 22px}.footer-directory-links a{font-size:12px}.footer-legal p,.footer-legal>span,.footer-legal nav{font-size:11px}}

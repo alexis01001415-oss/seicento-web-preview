@@ -4,7 +4,7 @@
 
 Prototipo de Seicento Makeup School para personas que quieren estudiar maquillaje. La dirección visual toma como referencia la presentación de producto de [AirPods Pro de Apple](https://www.apple.com/mx/airpods-pro/): titulares breves, beneficios concretos, imágenes protagonistas y lectura por bloques.
 
-La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 17 secciones**, con un H1 y 16 H2. La colaboración **Seicento × Beauty Creations** se presenta con una secuencia controlada por el desplazamiento y cinco bloques de características de Silky Pro Palette.
+La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 18 secciones**, con un H1, 17 H2 en el contenido y un H2 accesible para el pie de página. La colaboración **Seicento × Beauty Creations** se presenta con una secuencia controlada por el desplazamiento y cinco bloques de características de Silky Pro Palette.
 
 ## Archivos de trabajo
 
@@ -12,7 +12,9 @@ La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 17 se
 | --- | --- |
 | [`index.html`](index.html) | Copy, jerarquía, enlaces, secciones y estructura del bento |
 | [`styles.css`](styles.css) | Colores, tipografía, composición y adaptación a móvil |
-| [`admissions.css`](admissions.css) | Pestañas de educación continua y formulario de admisiones |
+| [`assets/admissions.css`](assets/admissions.css) | Pestañas de educación continua y formulario de admisiones |
+| [`assets/makeup-comparison.css`](assets/makeup-comparison.css) / [`assets/makeup-comparison.js`](assets/makeup-comparison.js) | Comparativa Antes / Después con arrastre, teclado y botones |
+| [`assets/footer.css`](assets/footer.css) | Contacto, campus, redes y directorio del pie de página |
 | [`assets/admissions.js`](assets/admissions.js) | Navegación de pestañas, selección de programa y preparación de la consulta |
 | [`assets/scroll-sequence.js`](assets/scroll-sequence.js) | Carga de imágenes, canvas, progreso y transiciones de texto |
 | [`docs/copy-design-system.md`](docs/copy-design-system.md) | Copy y especificación para construir en Framer |
@@ -53,3 +55,14 @@ GitHub Pages sirve el proyecto desde `main`. Esta documentación describe los ar
 La información académica procede del [sitio oficial de Seicento](https://seicento.edu.mx/), sus fichas y las indicaciones del responsable del proyecto. La colaboración fue confirmada por este último. Las fuentes y el alcance de cada beneficio se registran en el documento de copy. Los recursos de marca pertenecen a sus titulares; las imágenes de Silky proceden del material entregado para el proyecto.
 
 Los enlaces de contacto llevan a Seicento y su WhatsApp. La demo no almacena datos mediante formularios propios.
+
+
+## Antes / Después y footer
+
+La sección [Antes / Después](https://alexis01001415-oss.github.io/seicento-web-preview/#antes-despues) muestra una modelo ficticia adulta, con el mismo encuadre, antes y después de añadir maquillaje. Las dos imágenes se generaron con la herramienta integrada `image_gen`: primero el retrato y después una edición para conservar la identidad y la composición. Son una demostración ilustrativa, identificada como IA en la página, no un trabajo real de alumnado.
+
+- Imágenes: [`before.png`](assets/makeup-comparison/before.png) y [`after.png`](assets/makeup-comparison/after.png), 1536 × 1024 píxeles.
+- [Prompts completos y procedencia](docs/makeup-image-prompts.json).
+- Control mediante arrastre horizontal, deslizador nativo de teclado y botones de vista completa. Sin reproducción automática; las imágenes se cargan al acercarse al bloque. En móvil se aplica el mismo recorte a ambas.
+
+El footer reúne las cuatro redes oficiales (Instagram, Facebook, YouTube y LinkedIn), direcciones y mapas de Reforma/Coyoacán, tres teléfonos, WhatsApp, horarios de visitas guiadas, acceso a plataformas, formación, comunidad y acreditaciones. El único correo publicado encontrado es `controlycalidad@seicento.edu.mx`, identificado para calidad y privacidad. Fuentes: [contacto](https://seicento.edu.mx/contacto/), [campus](https://seicento.edu.mx/campus/), [privacidad](https://seicento.edu.mx/aviso-de-privacidad/) e inicio oficial. No se ha inventado un correo de admisiones ni un enlace de términos que la fuente no publica.

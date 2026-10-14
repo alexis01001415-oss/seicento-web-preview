@@ -25,18 +25,19 @@ Revisión del 13 de octubre de 2026. Especificación del prototipo local para su
 | 5 | Método Seicento 3D3 | H2: Aprende haciendo. | 70 % práctica, 20 % técnica y 10 % fundamentos en carreras profesionales. |
 | 6 | Experiencia Seicento | H2: Herramientas para ir más lejos. | Black Learn, prácticas, portafolio, estudio fotográfico, Makeup Store y masterclasses. |
 | 7 | Pro Beauty | H2: Haz que te encuentren. | Portafolio y servicios a la vista de posibles clientes. |
-| 8 | Producciones | H2: Ideas que toman forma. | Trabajos de maquillaje y proyectos de la comunidad. |
-| 9 | Comunidad | H2: El talento se comparte. | Más de 20,000 egresados, prácticas y proyectos finales. |
-| 10 | Respaldo | H2: Formación con respaldo. | SEP, CONOCER e IUM con condiciones por programa. |
-| 11 | Profesores | H2: Experiencia que se enseña. | Equipo docente y experiencia de la escuela. |
-| 12 | Campus | H2: Tu espacio para aprender. | Reforma y Coyoacán: direcciones, teléfonos y recorridos. |
-| 13 | Clase muestra | H2: Tu primera clase. Tu próxima decisión. | Clase muestra gratuita y Brunch + Masterclass en Reforma. |
-| 14 | Inscripción | H2: Empezar es más sencillo de lo que piensas. | Elegir programa, encontrar grupo y preparar inscripción. |
-| 15 | Noticias | H2: Ideas para tu siguiente paso. | Book, Nancy Tinoco y maquillaje en clima cálido. |
-| 16 | Preguntas frecuentes | H2: Lo que quieres saber. | 16 respuestas sobre programas, experiencia e inscripción. |
-| 17 | Contacto | H2: Empieza con una conversación. | Formulario de información o visita guiada que prepara una consulta para enviarla por WhatsApp. |
+| 8 | Antes / Después | H2: Misma persona. Otra expresión. | Comparativa ilustrativa de maquillaje con IA, arrastre y control de teclado. |
+| 9 | Producciones | H2: Ideas que toman forma. | Trabajos de maquillaje y proyectos de la comunidad. |
+| 10 | Comunidad | H2: El talento se comparte. | Más de 20,000 egresados, prácticas y proyectos finales. |
+| 11 | Respaldo | H2: Formación con respaldo. | SEP, CONOCER e IUM con condiciones por programa. |
+| 12 | Profesores | H2: Experiencia que se enseña. | Equipo docente y experiencia de la escuela. |
+| 13 | Campus | H2: Tu espacio para aprender. | Reforma y Coyoacán: direcciones, teléfonos y recorridos. |
+| 14 | Clase muestra | H2: Tu primera clase. Tu próxima decisión. | Clase muestra gratuita y Brunch + Masterclass en Reforma. |
+| 15 | Inscripción | H2: Empezar es más sencillo de lo que piensas. | Elegir programa, encontrar grupo y preparar inscripción. |
+| 16 | Noticias | H2: Ideas para tu siguiente paso. | Book, Nancy Tinoco y maquillaje en clima cálido. |
+| 17 | Preguntas frecuentes | H2: Lo que quieres saber. | 16 respuestas sobre programas, experiencia e inscripción. |
+| 18 | Contacto | H2: Empieza con una conversación. | Formulario de información o visita guiada que prepara una consulta para enviarla por WhatsApp. |
 
-Hay **un H1 y 16 H2 en 17 secciones**. Los programas, módulos y temas de FAQ usan H3. La introducción del bento es H3 y sus cinco beneficios son H4. En Framer configura la etiqueta HTML por separado del tamaño visual. **Método Seicento 3D3** es el nombre de la metodología académica de la escuela.
+Hay **un H1 y 17 H2 en 18 secciones de contenido**, además de un H2 accesible que identifica el footer. Los programas, módulos y temas de FAQ usan H3. La introducción del bento es H3 y sus cinco beneficios son H4. En Framer configura la etiqueta HTML por separado del tamaño visual. **Método Seicento 3D3** es el nombre de la metodología académica de la escuela.
 
 ## Copy principal
 
@@ -295,3 +296,30 @@ Los recursos de marca pertenecen a sus titulares. Las condiciones comerciales y 
 ## Contenido incluido · Confirmación del responsable
 
 El 13 de octubre de 2026, el responsable del proyecto confirmó que **se incluyen las dos brochas al adquirir Silky**. Se añadió una tarjeta de bento: **2 brochas. Más por crear.** / Del color a la aplicación. Tu paleta viene acompañada de dos brochas para poner tus ideas en práctica. El dato también aparece en la introducción, el cierre de la secuencia y la respuesta sobre la colaboración.
+
+
+## Comparativa ilustrativa de maquillaje
+
+**Maquillaje en detalle**
+**Misma persona. Otra expresión.**
+Color, definición y acabado. Desliza y descubre cómo cambia un look.
+
+Etiquetas: **Antes** / **Después**. Instrucción: **Arrastra la línea o usa las flechas del teclado.** Botones: **Ver antes** / **Ver después**. Identificación visible: **Comparativa ilustrativa creada con IA.** Acción: **Aprende a crear tu propio estilo** → carreras.
+
+La modelo es ficticia y adulta. La imagen con maquillaje es una edición de la imagen base; mantiene identidad, postura, vestuario, iluminación y composición. No representa una alumna, un cliente ni un resultado realizado por Seicento. Archivos en `assets/makeup-comparison/`; prompts y proceso en `docs/makeup-image-prompts.json`, generados con la herramienta integrada `image_gen`.
+
+La imagen base completa queda debajo; la capa Antes se recorta mediante `clip-path`. El control nativo `range` va de 0 a 100 y anuncia las proporciones visibles de cada imagen. El arrastre horizontal funciona con ratón o contacto táctil, preservando el desplazamiento vertical. Diseño 3:2 en escritorio y recorte compartido 4:5 en móvil. Las imágenes utilizan carga diferida. Si una falla, se muestra la disponible y se desactiva la interacción.
+
+## Pie de página completo
+
+El footer se divide en marca y redes, contacto por campus, visitas guiadas, directorio y cierre legal. Conserva fondo oscuro, líneas discretas y acentos rosa. En móvil, redes en dos columnas; campus y contacto en una; directorio en dos.
+
+- Instagram, Facebook, YouTube y LinkedIn oficiales, con nombre visible y enlace accesible.
+- Campus Reforma: Londres 102, planta alta, Col. Juárez, Cuauhtémoc, C.P. 06600, CDMX; 55 5208 0619.
+- Campus Coyoacán: Av. Miguel Ángel de Quevedo 773, San Francisco, Coyoacán, C.P. 04330, CDMX; 55 1539 9198 y 55 1539 9165.
+- Mapas de ambos campus, WhatsApp 56 5790 7961 y correo `controlycalidad@seicento.edu.mx`, identificado para atención, calidad y privacidad.
+- Visitas guiadas de lunes a viernes de 9 a 18 h y fines de semana de 9 a 16 h; solicitud mediante el formulario de contacto.
+- Formación, calendario, clase muestra, preguntas frecuentes, esencia, método, profesores, instalaciones, colaboración, comunidad, producciones, Black Learn, Pro Beauty, prensa, noticias, acreditaciones y atención.
+- Aviso de privacidad, identidad institucional y etiqueta de vista previa.
+
+Los datos proceden de las páginas oficiales de inicio, contacto, campus y privacidad, consultadas el 13 de octubre de 2026. No se encontró un correo general de admisiones. El texto de términos y condiciones del sitio original no enlaza a una página específica; no se creó un destino ficticio.
