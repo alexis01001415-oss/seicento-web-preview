@@ -19,6 +19,7 @@ La página conserva **siete opciones de carrera, 16 preguntas frecuentes y 18 se
 | [`assets/scroll-sequence.js`](assets/scroll-sequence.js) | Carga de imágenes, canvas, progreso y transiciones de texto |
 | [`docs/copy-design-system.md`](docs/copy-design-system.md) | Copy y especificación para construir en Framer |
 | [`framer/ImageSequenceScrub.tsx`](framer/ImageSequenceScrub.tsx) | Componente reutilizable para Framer; instalación en su [guía](framer/README.md) |
+| [`framer/BeforeAfterComparison.tsx`](framer/BeforeAfterComparison.tsx) | Comparativa para Framer sin textos, con PNG transparentes; [instalación y controles](framer/BeforeAfterComparison.md) |
 
 No hay proceso de compilación ni dependencias de aplicación. Para revisar el sitio, sirve la carpeta con un servidor HTTP estático, por ejemplo `python -m http.server 8000`, o utiliza la demo publicada del proyecto.
 
